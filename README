@@ -1,0 +1,5 @@
+Simple consistency tests for Gromacs FE VDW potentials. We look at a single atom type alchemical creation in water (e.g. DUM_HC->HC, DUM_CT->CT).
+
+We also look at combos of the atom types
+
+Finally, we compare VdW transformations with and without soft-core interactions at intermediate lambdas, as well as with and without sc_sigma (i.e. at 0.3 nm or 0.0)

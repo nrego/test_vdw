@@ -10,11 +10,11 @@ try:
     u_for_prev = u_for
 except:
     pass
-univ = MDAnalysis.Universe('no_sc.tpr', 'traj.xtc')
+univ = MDAnalysis.Universe('sc_no_sigma.tpr', 'traj.xtc')
 from mdtools import dr
 
-#alc_indices = np.arange(7,18)
-alc_indices = np.array([7])
+alc_indices = np.arange(7,18)
+#alc_indices = np.array([7])
 atm_indices = np.arange(univ.atoms.n_atoms)
 
 
@@ -38,14 +38,14 @@ excls = {
 
 # 14 pair list for each excluded atom
 pairs = {
-    7: (0,3,9,10,14,18), # HB3
+    7: (0,3,18), # HB3
     8: (0,3,18),
-    9: (2,5,6,7,11,12,13,15,16,17),
-    10: (2,5,6,7,15,16,17),
+    9: (2,5,6,11,12,13,15,16,17),
+    10: (2,5,6,15,16,17),
     11: (4,9,14),
     12: (4,9,14),
     13: (4,9,14),
-    14: (2,5,6,7,11,12,13),
+    14: (2,5,6,11,12,13),
     15: (4,9,10),
     16: (4,9,10),
     17: (4,9,10)
@@ -55,17 +55,17 @@ pairs = {
 #    valued by tuple (Astate_idx, Bstate_idx)
 #  NOTE: This is topology specific!!!
 alc_types = {
-    7: ('DUM_HC', 'HC'),
-    8: ('DUM_CT', 'DUM_CT'),
-    9: ('DUM_HC', 'DUM_HC'),
-    10: ('DUM_CT', 'DUM_CT'),
-    11: ('DUM_HC', 'DUM_HC'),
-    12: ('DUM_HC', 'DUM_HC'),
-    13: ('DUM_HC', 'DUM_HC'),
-    14: ('DUM_CT', 'DUM_CT'),
-    15: ('DUM_HC', 'DUM_HC'),
-    16: ('DUM_HC', 'DUM_HC'),
-    17: ('DUM_HC', 'DUM_HC')
+    7: ('HC', 'HC'),
+    8: ('CT', 'DUM_CT'),
+    9: ('HC', 'DUM_HC'),
+    10: ('CT', 'DUM_CT'),
+    11: ('HC', 'DUM_HC'),
+    12: ('HC', 'DUM_HC'),
+    13: ('HC', 'DUM_HC'),
+    14: ('CT', 'DUM_CT'),
+    15: ('HC', 'DUM_HC'),
+    16: ('HC', 'DUM_HC'),
+    17: ('HC', 'DUM_HC')
 }
 
 type_lookup = {
@@ -161,12 +161,12 @@ for i, payload_i in enumerate(atmtypes):
         sig6_lut[idx] = sig_6
 
 lmbda = 0.0
-lmbda_for = 1.0
+lmbda_for = 0.1
 
 fudge_vdw = 0.5
 
 n_frames = univ.trajectory.n_frames
-#n_frames = 1
+n_frames = 1
 my_diffs = np.zeros((n_frames, 2))
 
 for i_frame in range(n_frames):
@@ -207,7 +207,7 @@ for i_frame in range(n_frames):
             else:
                 type_j_a = type_j_b = type_lookup[atm_j.type]  
 
-            #print("j: {}".format(j))
+            print("j: {}".format(j))
             #print("  type a: {}, type b: {}".format(type_j_a, type_j_b))      
 
             lut_idx_a = type_i_a * n_atmtype + type_j_a
@@ -238,7 +238,7 @@ for i_frame in range(n_frames):
             this_u_lmbda = (1-lmbda) * ((c12_a/denom_lmbda_a**2) - (c6_a/denom_lmbda_a)) + (lmbda) * ( (c12_b/denom_lmbda_b**2) - (c6_b/denom_lmbda_b))
             this_u_for = (1-lmbda_for) * ((c12_a/denom_for_a**2) - (c6_a/denom_for_a)) + (lmbda_for) * ( (c12_b/denom_for_b**2) - (c6_b/denom_for_b))
             #print("  u_lmbda contrib: {}".format(this_u_lmbda))
-            #print("  u_for contrib: {}".format(this_u_for))
+            print("  u_for contrib: {}".format(this_u_for))
             u_lmbda += this_u_lmbda
             u_for += this_u_for
 
@@ -254,7 +254,7 @@ for i_frame in range(n_frames):
             else:
                 type_j_a = type_j_b = type_lookup[atm_j.type]  
 
-            #print("j (14 pair): {}".format(j))
+            print("j (14 pair): {}".format(j))
             #print("  type a: {}, type b: {}".format(type_j_a, type_j_b))      
 
             lut_idx_a = type_i_a * n_atmtype + type_j_a

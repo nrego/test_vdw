@@ -37,17 +37,17 @@ DUM               3
      5         CT      1   TL2A     CB      5    -0.1825      12.01   
      6         HC      1   TL2A    HB1      6     0.0603      1.008   
      7         HC      1   TL2A    HB2      7     0.0603      1.008   
-     8     DUM_HC      1   TL2A    HB3      8     0.0603      1.008   HC      0.0603 
-     9     DUM_CT      1   TL2A     CG      9     0.0000      12.01   DUM_CT  
-    10     DUM_HC      1   TL2A     HG     10     0.0000      1.008   DUM_HC
-    11     DUM_CT      1   TL2A    CD1     11     0.0000      12.01   DUM_CT
-    12     DUM_HC      1   TL2A   HD11     12        0.0      1.008   DUM_HC
-    13     DUM_HC      1   TL2A   HD12     13        0.0      1.008   DUM_HC
-    14     DUM_HC      1   TL2A   HD13     14        0.0      1.008   DUM_HC
-    15     DUM_CT      1   TL2A    CD2     15     0.0000      12.01   DUM_CT
-    16     DUM_HC      1   TL2A   HD21     16        0.0      1.008   DUM_HC
-    17     DUM_HC      1   TL2A   HD22     17        0.0      1.008   DUM_HC
-    18     DUM_HC      1   TL2A   HD23     18        0.0      1.008   DUM_HC
+     8     HC      1   TL2A    HB3      8     0.0000         1.008   HC
+     9     CT      1   TL2A     CG      9     0.0000      12.01   DUM_CT  
+    10     HC      1   TL2A     HG     10     0.0000      1.008   DUM_HC
+    11     CT      1   TL2A    CD1     11     0.0000      12.01   DUM_CT
+    12     HC      1   TL2A   HD11     12        0.0      1.008   DUM_HC
+    13     HC      1   TL2A   HD12     13        0.0      1.008   DUM_HC
+    14     HC      1   TL2A   HD13     14        0.0      1.008   DUM_HC
+    15     CT      1   TL2A    CD2     15     0.0000      12.01   DUM_CT
+    16     HC      1   TL2A   HD21     16        0.0      1.008   DUM_HC
+    17     HC      1   TL2A   HD22     17        0.0      1.008   DUM_HC
+    18     HC      1   TL2A   HD23     18        0.0      1.008   DUM_HC
     19          C      1   TL2A      C     19     0.5973      12.01   
     20          O      1   TL2A      O     20    -0.5679         16   
 

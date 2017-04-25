@@ -76,7 +76,7 @@ for i, payload_i in enumerate(atmtypes):
         sig6_lut[idx] = sig_6
 
 lmbda = 0.0
-lmbda_for = 0.5
+lmbda_for = 0.1
 
 n_frames = univ.trajectory.n_frames
 #n_frames = 1

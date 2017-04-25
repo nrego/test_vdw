@@ -1,14 +1,14 @@
-Log file opened on Mon Apr 24 20:36:55 2017
-Host: nick-ThinkPad-T440p  pid: 2737  nodeid: 0  nnodes:  1
-The Gromacs distribution was built Thu Mar 23 15:14:35 EDT 2017 by
-nick@nick-ThinkPad-T440p (Linux 3.19.0-58-generic x86_64)
+Log file opened on Tue Apr 25 13:14:34 2017
+Host: huntsman-ve565-2046.apn.wlan.upenn.edu  pid: 1535  nodeid: 0  nnodes:  1
+The Gromacs distribution was built Tue Mar 14 13:14:50 EDT 2017 by
+nick@huntsman-ve565-0253.apn.wlan.upenn.edu (Darwin 14.5.0 x86_64)
 
 
                          :-)  G  R  O  M  A  C  S  (-:
 
-                 Good ROcking Metal Altar for Chronical Sinners
+                               Grunge ROck MAChoS
 
-                            :-)  VERSION 4.5.6  (-:
+                            :-)  VERSION 4.5.3  (-:
 
         Written by Emile Apol, Rossen Apostolov, Herman J.C. Berendsen,
       Aldert van Buuren, Pär Bjelkmar, Rudi van Drunen, Anton Feenstra, 
@@ -225,15 +225,14 @@ ann_npoints:           0
 qm_opts:
    ngQM                 = 0
 
-Initializing Domain Decomposition on 8 nodes
+Initializing Domain Decomposition on 4 nodes
 Dynamic load balancing: auto
 Will sort the charge groups at every domain (re)decomposition
-Using 0 separate PME nodes, as there are too few total
- nodes for efficient splitting
+Using 0 separate PME nodes
 Scaling the initial minimum size with 1/0.8 (option -dds) = 1.25
-Optimizing the DD grid for 8 cells with a minimum initial size of 0.000 nm
-Domain decomposition grid 4 x 2 x 1, separate PME nodes 0
-PME domain decomposition: 4 x 2 x 1
+Optimizing the DD grid for 4 cells with a minimum initial size of 0.000 nm
+Domain decomposition grid 4 x 1 x 1, separate PME nodes 0
+PME domain decomposition: 4 x 1 x 1
 Domain decomposition nodeid 0, coordinates 0 0 0
 
 Table routines are used for coulomb: TRUE
@@ -241,7 +240,7 @@ Table routines are used for vdw:     FALSE
 Will do PME sum in reciprocal space.
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-U. Essmann, L. Perera, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
+U. Essman, L. Perela, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
 A smooth particle mesh Ewald method
 J. Chem. Phys. 103 (1995) pp. 8577-8592
 -------- -------- --- Thank You --- -------- --------
@@ -276,20 +275,20 @@ J. Comp. Chem. 13 (1992) pp. 952-962
 
 Linking all bonded interactions to atoms
 
-The initial number of communication pulses is: X 2 Y 1
-The initial domain decomposition cell size is: X 0.75 nm Y 1.50 nm
+The initial number of communication pulses is: X 2
+The initial domain decomposition cell size is: X 0.75 nm
 
 When dynamic load balancing gets turned on, these settings will change to:
-The maximum number of communication pulses is: X 2 Y 1
+The maximum number of communication pulses is: X 2
 The minimum size for domain decomposition cells is 0.500 nm
 The requested allowed shrink of DD cells (option -dds) is: 0.80
-The allowed shrink of domain decomposition cells is: X 0.67 Y 0.67
+The allowed shrink of domain decomposition cells is: X 0.67
 
-Making 2D domain decomposition grid 4 x 2 x 1, home cell index 0 0 0
+Making 1D domain decomposition grid 4 x 1 x 1, home cell index 0 0 0
 
 There are: 2686 Atoms
-Charge group distribution at step 0: 118 109 123 103 113 116 114 100
-Grid: 5 x 4 x 5 cells
+Charge group distribution at step 0: 227 226 229 214
+Grid: 5 x 4 x 4 cells
 
 Constraining the starting coordinates (step 0)
 
@@ -297,32 +296,32 @@ Constraining the coordinates at t0-dt (step 0)
 RMS relative constraint deviation after constraining: 0.00e+00
 Initial temperature: 3.78154e-07 K
 
-Started mdrun on node 0 Mon Apr 24 20:36:55 2017
+Started mdrun on node 0 Tue Apr 25 13:14:34 2017
 
            Step           Time         Lambda
               0        0.00000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.68356e+04   -3.82330e+04   -2.78471e+03   -2.41821e+04    7.28213e+02
+    1.68356e+04   -3.82330e+04   -2.78471e+03   -2.41821e+04    7.28212e+02
    Total Energy    Temperature Pressure (bar)
-   -2.34539e+04    3.26013e+01    2.79805e+04
+   -2.34539e+04    3.26013e+01    2.79808e+04
 
-DD  step 9 load imb.: force  7.6%
+DD  step 9 load imb.: force  1.7%
 
-DD  step 499 load imb.: force 11.9%
+DD  step 499 load imb.: force 11.6%
 
            Step           Time         Lambda
             500        1.00000        0.00000
 
-Writing checkpoint, step 500 at Mon Apr 24 20:36:56 2017
+Writing checkpoint, step 500 at Tue Apr 25 13:14:35 2017
 
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    6.02127e+03   -3.70798e+04   -3.23396e+03   -3.42925e+04    1.04183e+04
+    6.08097e+03   -3.74492e+04   -3.24092e+03   -3.46092e+04    1.07353e+04
    Total Energy    Temperature Pressure (bar)
-   -2.38742e+04    4.66414e+02    2.95396e+03
+   -2.38739e+04    4.80609e+02    2.83972e+03
 
 	<======  ###############  ==>
 	<====  A V E R A G E S  ====>
@@ -332,22 +331,22 @@ Writing checkpoint, step 500 at Mon Apr 24 20:36:56 2017
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    7.28493e+03   -3.88514e+04   -3.26285e+03   -3.48293e+04    1.09579e+04
+    7.26902e+03   -3.88173e+04   -3.26575e+03   -3.48140e+04    1.09435e+04
    Total Energy    Temperature Pressure (bar)
-   -2.38713e+04    4.90575e+02    5.29643e+03
+   -2.38705e+04    4.89930e+02    5.25157e+03
 
    Total Virial (kJ/mol)
-   -7.73626e+02   -6.20577e+01   -4.54798e+01
-   -6.22930e+01   -5.62988e+02    2.36706e+02
-   -4.51084e+01    2.37290e+02   -6.23251e+02
+   -8.59741e+02   -3.21010e+01   -1.18983e+01
+   -3.16217e+01   -4.74070e+02    8.36008e+01
+   -1.13935e+01    8.34733e+01   -5.31069e+02
 
    Pressure (bar)
-    5.58263e+03    7.46261e+01    6.91271e+01
-    7.49155e+01    5.20874e+03   -3.10658e+02
-    6.86703e+01   -3.11377e+02    5.09792e+03
+    5.69193e+03    2.03890e+01    3.91794e+01
+    1.97995e+01    5.05205e+03   -1.16678e+02
+    3.85585e+01   -1.16521e+02    5.01075e+03
 
    Total Dipole (D)
-   -5.89074e+00   -5.33419e+01    4.38297e+01
+   -1.43374e+01   -2.49454e+01   -2.72005e+01
 
 
 	M E G A - F L O P S   A C C O U N T I N G
@@ -358,72 +357,64 @@ Writing checkpoint, step 500 at Mon Apr 24 20:36:56 2017
 
  Computing:                               M-Number         M-Flops  % Flops
 -----------------------------------------------------------------------------
- Coul(T) + LJ [W3-W3]                    31.164055       11904.669    78.2
- Outer nonbonded loop                     8.712351          87.124     0.6
+ Coul(T) + LJ [W3-W3]                    31.147743       11898.438    78.2
+ Outer nonbonded loop                     9.214209          92.142     0.6
  Calc Weights                             4.037058         145.334     1.0
  Spread Q Bspline                        86.123904         172.248     1.1
  Gather F Bspline                        86.123904         516.743     3.4
  3D-FFT                                 218.115360        1744.923    11.5
  Solve PME                                4.070625         260.520     1.7
- NS-Pairs                                 8.781844         184.419     1.2
+ NS-Pairs                                 8.730418         183.339     1.2
  Reset In Box                             0.045696           0.137     0.0
  CG-CoM                                   0.139672           0.419     0.0
- Virial                                   0.155346           2.796     0.0
+ Virial                                   0.146166           2.631     0.0
  Calc-Ekin                                1.348372          36.406     0.2
  Constraint-V                             1.347870          10.783     0.1
  Constraint-Vir                           0.136935           3.286     0.0
  Settle                                   0.450185         145.410     1.0
 -----------------------------------------------------------------------------
- Total                                                   15215.217   100.0
+ Total                                                   15212.759   100.0
 -----------------------------------------------------------------------------
 
 
     D O M A I N   D E C O M P O S I T I O N   S T A T I S T I C S
 
- av. #atoms communicated per step for force:  2 x 7267.0
+ av. #atoms communicated per step for force:  2 x 3579.3
 
- Average load imbalance: 14.3 %
- Part of the total run time spent waiting due to load imbalance: 6.2 %
-
-NOTE: 6.2 % performance was lost due to load imbalance
-      in the domain decomposition.
-      You might want to use dynamic load balancing (option -dlb.)
+ Average load imbalance: 11.6 %
+ Part of the total run time spent waiting due to load imbalance: 3.8 %
 
 
      R E A L   C Y C L E   A N D   T I M E   A C C O U N T I N G
 
  Computing:         Nodes     Number     G-Cycles    Seconds     %
 -----------------------------------------------------------------------
- Domain decomp.         8         51        0.130        0.0     0.9
- DD comm. load          8          6        0.000        0.0     0.0
- Comm. coord.           8        501        0.195        0.1     1.4
- Neighbor search        8         51        0.560        0.2     4.1
- Force                  8        501        6.208        2.3    45.3
- Wait + Comm. F         8        501        0.111        0.0     0.8
- PME mesh               8        501        4.439        1.6    32.4
- Write traj.            8         51        0.198        0.1     1.4
- Update                 8        501        0.177        0.1     1.3
- Constraints            8        501        0.276        0.1     2.0
- Comm. energies         8         51        1.320        0.5     9.6
- Rest                   8                   0.103        0.0     0.8
+ Domain decomp.         4         51        0.144        0.0     1.0
+ DD comm. load          4          6        0.000        0.0     0.0
+ Comm. coord.           4        501        0.207        0.1     1.4
+ Neighbor search        4         51        0.805        0.2     5.6
+ Force                  4        501        5.320        1.6    37.0
+ Wait + Comm. F         4        501        0.109        0.0     0.8
+ PME mesh               4        501        6.315        1.9    43.9
+ Write traj.            4         51        0.166        0.1     1.2
+ Update                 4        501        0.227        0.1     1.6
+ Constraints            4        501        0.395        0.1     2.7
+ Comm. energies         4         52        0.446        0.1     3.1
+ Rest                   4                   0.255        0.1     1.8
 -----------------------------------------------------------------------
- Total                  8                  13.717        5.1   100.0
+ Total                  4                  14.389        4.4   100.0
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
- PME redist. X/F        8       1002        1.823        0.7    13.3
- PME spread/gather      8       1002        1.648        0.6    12.0
- PME 3D-FFT             8       1002        0.813        0.3     5.9
- PME solve              8        501        0.149        0.1     1.1
+ PME redist. X/F        4       1002        1.276        0.4     8.9
+ PME spread/gather      4       1002        3.811        1.2    26.5
+ PME 3D-FFT             4       1002        0.746        0.2     5.2
+ PME solve              4        501        0.479        0.1     3.3
 -----------------------------------------------------------------------
-
-NOTE: 10 % of the run time was spent communicating energies,
-      you might want to use the -gcom option of mdrun
-
 
 	Parallel run - timing based on wallclock.
 
                NODE (s)   Real (s)      (%)
-       Time:      0.637      0.637    100.0
+       Time:      1.093      1.093    100.0
                (Mnbf/s)   (GFlops)   (ns/day)  (hour/ns)
-Performance:    440.627     23.903    136.005      0.176
-Finished mdrun on node 0 Mon Apr 24 20:36:56 2017
+Performance:    256.583     13.924     79.239      0.303
+Finished mdrun on node 0 Tue Apr 25 13:14:35 2017

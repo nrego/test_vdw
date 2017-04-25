@@ -1,0 +1,45 @@
+;
+;	File 'topol.top' was generated
+;	By user: onbekend (0)
+;	On host: onbekend
+;	At date: Mon Apr 24 21:15:30 2017
+;
+;	This is a standalone topology file
+;
+;	It was generated using program:
+;	pdb2gmx - VERSION 4.5.6
+;
+;	Command line was:
+;	pdb2gmx -f struct_single.gro 
+;
+;	Force field was read from current directory or a relative path - path added.
+;
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+[ atomtypes ]
+HC           1       1.008   0.0000  A   2.64953e-01  6.56888e-02
+DUM_HC           1       1.008   0.0000  A   0.00000e+00  0.00000e+00
+O            8      16.00    0.0000  A   2.95992e-01  8.78640e-01
+
+[ moleculetype ]
+; Name            nrexcl
+DUM               3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue   1 TL2A rtp TL2A q  0.0
+     1     DUM_HC      1   TL2A    HB3      8     0.0000      1.008   HC      0.0000     1.008 
+     2          O      1   TL2A      O     20     -0.5000         16  
+
+
+
+[ system ]
+; Name
+TL2A amino acid residue
+
+[ molecules ]
+; Compound        #mols
+DUM               1

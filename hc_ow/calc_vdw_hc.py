@@ -20,7 +20,7 @@ excls = {
          0:(0)
 }
 
-# dictionary of alchemical atom type transofmations.
+# dictionary of alchemical atom type transformations.
 #    keyed by alchemical index of an atom that is to be transformed
 #    valued by tuple (Astate_idx, Bstate_idx)
 #  NOTE: This is topology specific!!!

@@ -1,14 +1,14 @@
-Log file opened on Mon Apr 24 20:26:40 2017
-Host: nick-ThinkPad-T440p  pid: 2368  nodeid: 0  nnodes:  1
-The Gromacs distribution was built Thu Mar 23 15:14:35 EDT 2017 by
-nick@nick-ThinkPad-T440p (Linux 3.19.0-58-generic x86_64)
+Log file opened on Tue Apr 25 10:30:18 2017
+Host: huntsman-ve565-2046.apn.wlan.upenn.edu  pid: 698  nodeid: 0  nnodes:  1
+The Gromacs distribution was built Tue Mar 14 13:14:50 EDT 2017 by
+nick@huntsman-ve565-0253.apn.wlan.upenn.edu (Darwin 14.5.0 x86_64)
 
 
                          :-)  G  R  O  M  A  C  S  (-:
 
-                       Great Red Owns Many ACres of Sand 
+                      GROup of MAchos and Cynical Suckers
 
-                            :-)  VERSION 4.5.6  (-:
+                            :-)  VERSION 4.5.3  (-:
 
         Written by Emile Apol, Rossen Apostolov, Herman J.C. Berendsen,
       Aldert van Buuren, Pär Bjelkmar, Rudi van Drunen, Anton Feenstra, 
@@ -229,7 +229,7 @@ Table routines are used for vdw:     FALSE
 Will do PME sum in reciprocal space.
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-U. Essmann, L. Perera, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
+U. Essman, L. Perela, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
 A smooth particle mesh Ewald method
 J. Chem. Phys. 103 (1995) pp. 8577-8592
 -------- -------- --- Thank You --- -------- --------
@@ -255,7 +255,7 @@ Max number of connections per atom is 0
 Total number of connections is 0
 Initial temperature: 320.712 K
 
-Started mdrun on node 0 Mon Apr 24 20:26:40 2017
+Started mdrun on node 0 Tue Apr 25 10:30:18 2017
 
            Step           Time         Lambda
               0        0.00000        0.00000
@@ -270,7 +270,7 @@ Grid: 3 x 3 x 3 cells
            Step           Time         Lambda
             500        1.00000        0.00000
 
-Writing checkpoint, step 500 at Mon Apr 24 20:26:40 2017
+Writing checkpoint, step 500 at Tue Apr 25 10:30:18 2017
 
 
    Energies (kJ/mol)
@@ -333,22 +333,22 @@ Writing checkpoint, step 500 at Mon Apr 24 20:26:40 2017
  Computing:         Nodes     Number     G-Cycles    Seconds     %
 -----------------------------------------------------------------------
  Neighbor search        1         51        0.001        0.0     0.1
- Force                  1        501        0.001        0.0     0.3
- PME mesh               1        501        0.406        0.2    86.6
- Write traj.            1         51        0.056        0.0    12.0
- Update                 1        501        0.000        0.0     0.1
- Rest                   1                   0.004        0.0     0.9
+ Force                  1        501        0.002        0.0     0.2
+ PME mesh               1        501        1.095        0.3    98.1
+ Write traj.            1         51        0.011        0.0     1.0
+ Update                 1        501        0.001        0.0     0.1
+ Rest                   1                   0.006        0.0     0.6
 -----------------------------------------------------------------------
- Total                  1                   0.468        0.2   100.0
+ Total                  1                   1.116        0.3   100.0
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
- PME spread/gather      1       1002        0.042        0.0     9.0
- PME 3D-FFT             1       1002        0.251        0.1    53.7
- PME solve              1        501        0.111        0.0    23.8
+ PME spread/gather      1       1002        0.354        0.1    31.7
+ PME 3D-FFT             1       1002        0.236        0.1    21.2
+ PME solve              1        501        0.504        0.2    45.2
 -----------------------------------------------------------------------
 
                NODE (s)   Real (s)      (%)
-       Time:      0.154      0.174     88.5
+       Time:      0.337      0.339     99.4
                (Mnbf/s)   (GFlops)   (ns/day)  (hour/ns)
-Performance:      0.000     13.040    562.746      0.043
-Finished mdrun on node 0 Mon Apr 24 20:26:40 2017
+Performance:      0.000      5.954    256.938      0.093
+Finished mdrun on node 0 Tue Apr 25 10:30:18 2017

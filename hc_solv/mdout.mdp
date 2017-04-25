@@ -2,14 +2,14 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: onbekend (0)
 ;	On host: onbekend
-;	At date: Tue Apr 25 13:14:39 2017
+;	At date: Tue Apr 25 16:42:18 2017
 ;
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
 ; e.g.: -I/home/joe/doe -I/home/mary/roe
 include                  = 
-; e.g.: -DI_Want_Cookies -DMe_Too
+; e.g.: -DPOSRES -DFLEXIBLE (note these variable names are case sensitive)
 define                   = 
 
 ; RUN CONTROL PARAMETERS
@@ -58,10 +58,10 @@ nstfout                  = 0
 nstlog                   = 500
 nstcalcenergy            = -1
 nstenergy                = 10
-; Output frequency and precision for xtc file
+; Output frequency and precision for .xtc file
 nstxtcout                = 10
 xtc-precision            = 1000000
-; This selects the subset of atoms for the xtc file. You can
+; This selects the subset of atoms for the .xtc file. You can
 ; select multiple groups. By default all atoms will be written.
 xtc-grps                 = 
 ; Selection of energy groups
@@ -97,7 +97,7 @@ rvdw                     = 1.0
 DispCorr                 = no
 ; Extension of the potential lookup tables beyond the cut-off
 table-extension          = 1
-; Seperate tables between energy group pairs
+; Separate tables between energy group pairs
 energygrp_table          = 
 ; Spacing for the PME/PPPM FFT grid
 fourierspacing           = 0.12

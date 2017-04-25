@@ -43,9 +43,9 @@ atmtypes = [
 
 
 # set combined sigma to this if it's smaller
-sc_sigma = 0.0
+sc_sigma = 0.3
 sc_sigma6 = sc_sigma**6
-sc_alpha = 0.0
+sc_alpha = 0.5
 
 n_atmtype = len(atmtypes)
 # Generate VdW lookup table

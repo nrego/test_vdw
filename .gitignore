@@ -1,4 +1,6 @@
-*.xvg 
+**/*.xvg
+**/*.cpt
+**/confout.gro
 *.edr
 *.tpr
 *.log

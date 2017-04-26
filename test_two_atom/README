@@ -1,0 +1,5 @@
+Even *simpler* version of test in "../res_single"
+
+In this case, we've removed all atoms except HB3 (DUM_HC->HC) and the carbonyl backbone O (The only non-excluded and non-dummy atom, besides the backbone N's H)
+
+

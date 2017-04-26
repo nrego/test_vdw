@@ -1,4 +1,8 @@
-*/*.xvg 
-*/*.edr
-*/*.tpr
-*/*.log
+*.xvg 
+*.edr
+*.tpr
+*.log
+*.trr
+*.xtc
+*.npz
+mdout.mdp

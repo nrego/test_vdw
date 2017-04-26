@@ -8,16 +8,14 @@ dt              = 0.002
 ; set to taste
 nsteps          = 500 ; 1 ps
 
-comm-mode       = Linear
+comm-mode       = None
 nstcomm         = 10
 comm-grps       = System
 
 ; OUTPUT CONTROL
-nstxout         = 0
-nstvout         = 0
-nstfout         = 0
-nstxtcout       = 10
-xtc-precision   = 1000000 ; to 6 decimal places
+nstxout         = 10
+nstvout         = 10
+nstfout         = 10
 ; Change if you want to output energies more often
 nstenergy       = 10
 nstlog          = 500
@@ -52,7 +50,7 @@ tau_t           = 0.5
 ref_t           = 300
 
 ; VELOCITY GENERATION
-gen_vel         = yes
+gen_vel         = no
 gen_temp        = 300
 gen_seed        = -1
 
@@ -64,7 +62,7 @@ lincs_iter           = 1
 continuation         = no
 
 free_energy     = yes
-init_lambda     = 0.0
+init_lambda     = 0.5
 foreign_lambda  = 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
 sc_alpha        = 0.0
 

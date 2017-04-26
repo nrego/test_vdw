@@ -31,8 +31,8 @@ DUM               3
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
 ; residue   1 TL2A rtp TL2A q  0.0
-     1     DUM_HC      1   TL2A    HB3      8     0.0000      1.008   HC      0.0000     1.008 
-     2          O      1   TL2A      O     20     -0.5000         16  
+     1     DUM_HC      1   TL2A    HB3      8     0.0608      1.008   HC      0.0608     1.008 
+     2          O      1   TL2A      O     20    -0.5679         16  
 
 
 

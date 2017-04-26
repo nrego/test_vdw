@@ -1,14 +1,14 @@
-Log file opened on Tue Apr 25 15:04:13 2017
-Host: huntsman-ve565-2046.apn.wlan.upenn.edu  pid: 3036  nodeid: 0  nnodes:  1
-The Gromacs distribution was built Tue Mar 14 13:14:50 EDT 2017 by
-nick@huntsman-ve565-0253.apn.wlan.upenn.edu (Darwin 14.5.0 x86_64)
+Log file opened on Wed Apr 26 10:01:45 2017
+Host: nick-ThinkPad-T440p  pid: 26324  nodeid: 0  nnodes:  1
+The Gromacs distribution was built Thu Mar 23 15:14:35 EDT 2017 by
+nick@nick-ThinkPad-T440p (Linux 3.19.0-58-generic x86_64)
 
 
                          :-)  G  R  O  M  A  C  S  (-:
 
-                     Gnomes, ROck Monsters And Chili Sauce
+                   Great Red Oystrich Makes All Chemists Sane
 
-                            :-)  VERSION 4.5.3  (-:
+                            :-)  VERSION 4.5.6  (-:
 
         Written by Emile Apol, Rossen Apostolov, Herman J.C. Berendsen,
       Aldert van Buuren, Pär Bjelkmar, Rudi van Drunen, Anton Feenstra, 
@@ -229,7 +229,7 @@ Table routines are used for vdw:     FALSE
 Will do PME sum in reciprocal space.
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-U. Essman, L. Perela, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
+U. Essmann, L. Perera, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
 A smooth particle mesh Ewald method
 J. Chem. Phys. 103 (1995) pp. 8577-8592
 -------- -------- --- Thank You --- -------- --------
@@ -237,18 +237,12 @@ J. Chem. Phys. 103 (1995) pp. 8577-8592
 Will do ordinary reciprocal space Ewald sum.
 Using a Gaussian width (1/beta) of 0.320163 nm for Ewald
 Cut-off's:   NS: 1   Coulomb: 1   LJ: 1
-System total charge: -0.060
+System total charge: -0.000
 Generated table with 1000 data points for Ewald.
 Tabscale = 500 points/nm
 Generated table with 1000 data points for LJ6.
 Tabscale = 500 points/nm
 Generated table with 1000 data points for LJ12.
-Tabscale = 500 points/nm
-Generated table with 1000 data points for 1-4 COUL.
-Tabscale = 500 points/nm
-Generated table with 1000 data points for 1-4 LJ6.
-Tabscale = 500 points/nm
-Generated table with 1000 data points for 1-4 LJ12.
 Tabscale = 500 points/nm
 Configuring nonbonded kernels...
 Configuring standard C nonbonded kernels...
@@ -267,8 +261,8 @@ J. Comp. Chem. 18 (1997) pp. 1463-1472
 
 The number of constraints is 12
 There are: 20 Atoms
-Max number of connections per atom is 103
-Total number of connections is 596
+Max number of connections per atom is 97
+Total number of connections is 500
 Max number of graph edges per atom is 5
 Total number of graph edges is 38
 
@@ -278,33 +272,33 @@ Constraining the coordinates at t0-dt (step 0)
 RMS relative constraint deviation after constraining: 3.00e-07
 Initial temperature: 3.64023e-08 K
 
-Started mdrun on node 0 Tue Apr 25 15:04:13 2017
+Started mdrun on node 0 Wed Apr 26 10:01:45 2017
 
            Step           Time         Lambda
               0        0.00000        0.00000
 
 Grid: 3 x 3 x 3 cells
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.72855e+00    2.40005e+01    6.51919e+00    3.77920e+00    1.66007e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-   -4.48878e-01   -8.57471e+00   -6.65930e+01    1.27418e+02    2.06993e+00
-   Total Energy    Temperature Pressure (bar)   Constr. rmsd
-    1.29488e+02    1.03731e+01   -3.69923e+01    4.73723e-07
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    2.72855e+00    2.40005e+01    6.51919e+00   -3.91947e-01   -9.33898e+00
+   Coul. recip.      Potential    Kinetic En.   Total Energy    Temperature
+   -7.24858e+01   -4.89685e+01    1.94983e+00   -4.70187e+01    9.77124e+00
+ Pressure (bar)   Constr. rmsd
+   -6.74559e+01    2.79041e-07
 
            Step           Time         Lambda
             500        1.00000        0.00000
 
-Writing checkpoint, step 500 at Tue Apr 25 15:04:13 2017
+Writing checkpoint, step 500 at Wed Apr 26 10:01:45 2017
 
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.20277e+00    1.31154e+01    4.25919e+00    4.05749e+00    1.88440e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-   -5.35214e-01   -2.62272e+01   -7.47074e+01    1.10605e+02    1.77298e+01
-   Total Energy    Temperature Pressure (bar)   Constr. rmsd
-    1.28334e+02    8.88499e+01   -2.58601e+01    8.28412e-07
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    6.80770e+00    2.00265e+01    9.46960e+00   -1.76369e+00   -3.37861e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy    Temperature
+   -8.25772e+01   -8.18232e+01    3.40387e+01   -4.77845e+01    1.70579e+02
+ Pressure (bar)   Constr. rmsd
+   -7.29724e+01    7.98383e-07
 
 	<======  ###############  ==>
 	<====  A V E R A G E S  ====>
@@ -313,25 +307,25 @@ Writing checkpoint, step 500 at Tue Apr 25 15:04:13 2017
 	Statistics over 501 steps using 51 frames
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.96885e+00    1.33346e+01    4.54288e+00    3.61482e+00    1.87606e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-   -5.08405e-01   -2.42671e+01   -7.39719e+01    1.12320e+02    1.62036e+01
-   Total Energy    Temperature Pressure (bar)   Constr. rmsd
-    1.28524e+02    8.12012e+01    2.55701e-01    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    4.76613e+00    3.17114e+01    7.73531e+00    2.41834e+00   -4.62662e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy    Temperature
+   -8.47460e+01   -8.43811e+01    3.67310e+01   -4.76501e+01    1.84071e+02
+ Pressure (bar)   Constr. rmsd
+   -2.14760e+00    0.00000e+00
 
    Total Virial (kJ/mol)
-    1.96109e+00   -1.33409e+00   -3.68163e-01
-   -1.33410e+00    9.26720e+00    1.35672e+00
-   -3.68168e-01    1.35672e+00    4.35163e+00
+    1.57837e+01    1.59385e+00   -1.74731e+00
+    1.59385e+00    1.36770e+01   -2.20824e+00
+   -1.74734e+00   -2.20827e+00    1.25082e+01
 
    Pressure (bar)
-    4.18340e+00   -1.87294e-01    1.40074e+00
-   -1.87289e-01   -4.53618e+00   -2.03884e+00
-    1.40075e+00   -2.03884e+00    1.11987e+00
+   -3.20127e+00   -1.71473e+00    4.55102e-01
+   -1.71474e+00   -4.70304e+00    1.16519e+00
+    4.55146e-01    1.16523e+00    1.46151e+00
 
    Total Dipole (D)
-   -4.43326e+00   -1.28558e+00   -4.25376e+00
+   -6.91750e-01    3.24001e+00    6.48771e-01
 
 
 	M E G A - F L O P S   A C C O U N T I N G
@@ -342,9 +336,10 @@ Writing checkpoint, step 500 at Tue Apr 25 15:04:13 2017
 
  Computing:                               M-Number         M-Flops  % Flops
 -----------------------------------------------------------------------------
+ LJ                                       0.037074           1.223     0.1
+ Coul(T)                                  0.001002           0.042     0.0
  Coul(T) + LJ                             0.002505           0.138     0.0
- Outer nonbonded loop                     0.001002           0.010     0.0
- 1,4 nonbonded interactions               0.024048           2.164     0.1
+ Outer nonbonded loop                     0.010020           0.100     0.0
  Calc Weights                             0.030060           1.082     0.1
  Spread Q Bspline                         0.641280           1.283     0.1
  Gather F Bspline                         0.641280           3.848     0.2
@@ -364,7 +359,7 @@ Writing checkpoint, step 500 at Tue Apr 25 15:04:13 2017
  Constraint-V                             0.012048           0.096     0.0
  Constraint-Vir                           0.000612           0.015     0.0
 -----------------------------------------------------------------------------
- Total                                                    2024.658   100.0
+ Total                                                    2023.849   100.0
 -----------------------------------------------------------------------------
 
 
@@ -372,24 +367,24 @@ Writing checkpoint, step 500 at Tue Apr 25 15:04:13 2017
 
  Computing:         Nodes     Number     G-Cycles    Seconds     %
 -----------------------------------------------------------------------
- Neighbor search        1         51        0.004        0.0     0.3
- Force                  1        501        0.081        0.0     6.6
- PME mesh               1        501        1.105        0.3    90.7
- Write traj.            1         51        0.010        0.0     0.8
- Update                 1        501        0.002        0.0     0.2
- Constraints            1        501        0.006        0.0     0.5
- Rest                   1                   0.010        0.0     0.8
+ Neighbor search        1         51        0.002        0.0     0.4
+ Force                  1        501        0.024        0.0     5.8
+ PME mesh               1        501        0.285        0.1    68.0
+ Write traj.            1         51        0.101        0.0    24.1
+ Update                 1        501        0.001        0.0     0.2
+ Constraints            1        501        0.002        0.0     0.4
+ Rest                   1                   0.005        0.0     1.1
 -----------------------------------------------------------------------
- Total                  1                   1.217        0.4   100.0
+ Total                  1                   0.419        0.2   100.0
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
- PME spread/gather      1       1002        0.365        0.1    30.0
- PME 3D-FFT             1       1002        0.236        0.1    19.4
- PME solve              1        501        0.503        0.2    41.3
+ PME spread/gather      1       1002        0.031        0.0     7.5
+ PME 3D-FFT             1       1002        0.177        0.1    42.2
+ PME solve              1        501        0.076        0.0    18.2
 -----------------------------------------------------------------------
 
                NODE (s)   Real (s)      (%)
-       Time:      0.369      0.370     99.7
+       Time:      0.119      0.155     76.5
                (Mnbf/s)   (GFlops)   (ns/day)  (hour/ns)
-Performance:      0.007      5.493    234.861      0.102
-Finished mdrun on node 0 Tue Apr 25 15:04:13 2017
+Performance:      0.341     17.015    727.845      0.033
+Finished mdrun on node 0 Wed Apr 26 10:01:45 2017

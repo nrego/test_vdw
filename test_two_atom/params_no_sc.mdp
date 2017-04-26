@@ -46,7 +46,7 @@ DispCorr        = no
 
 ; TEMPERATURE COUPLING
 ; Used for NVT equilibration only - Berendsen doesn't reproduce correct kinetic ensemble
-tcoupl          = Vrescale
+tcoupl          = No
 tc_grps         = System
 tau_t           = 0.5 
 ref_t           = 300

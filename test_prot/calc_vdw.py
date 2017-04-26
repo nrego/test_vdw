@@ -10,10 +10,11 @@ try:
     u_for_prev = u_for
 except:
     pass
-univ = MDAnalysis.Universe('sc_no_sigma.tpr', 'traj.xtc')
+univ = MDAnalysis.Universe('sc_sigma.tpr', 'traj.xtc')
 from mdtools import dr
 
 alc_indices = np.arange(877, 888)
+#alc_indices = [877]
 atm_indices = np.arange(univ.atoms.n_atoms)
 
 
@@ -56,7 +57,7 @@ pairs = {
 #    valued by tuple (Astate_idx, Bstate_idx)
 #  NOTE: This is topology specific!!!
 alc_types = {
-    877: ('DUM_HC', 'DUM_HC'),
+    877: ('DUM_HC', 'HC'),
     878: ('CT', 'DUM_CT'),
     879: ('HC', 'DUM_HC'),
     880: ('CT', 'DUM_CT'),
@@ -129,9 +130,9 @@ atmtypes = [
 
 
 # set combined sigma to this if it's smaller
-sc_sigma = 0.0
+sc_sigma = 0.3
 sc_sigma6 = sc_sigma**6
-sc_alpha = 0.0
+sc_alpha = 0.5
 
 n_atmtype = len(atmtypes)
 # Generate VdW lookup table
@@ -161,136 +162,139 @@ for i, payload_i in enumerate(atmtypes):
             sig_6 = sc_sigma**6
         sig6_lut[idx] = sig_6
 
-lmbda = 0.0
-lmbda_for = 0.1
-
 fudge_vdw = 0.5
 
+
+lmbda = 0.0
+for_lmbdas = [0.1, 0.5, 0.9, 1.0]
+
 n_frames = univ.trajectory.n_frames
-n_frames = 1
-my_diffs = np.zeros((n_frames, 2))
+#n_frames = 1
+my_diffs = np.zeros((len(for_lmbdas), n_frames, 2))
 
-for i_frame in range(n_frames):
-    univ.trajectory[i_frame]
-    my_diffs[i_frame, 0] = univ.trajectory.time
-    univ.atoms.positions = univ.atoms.positions / 10.0
-    # Calculate VdW energy differences between lambdas
-    u_lmbda = 0.0
-    u_for = 0.0
-    for i in alc_indices:
-        # all atoms separated by more than nrexcl bonds (i.e. not excluded)
-        # Note: If i and j are both in alc_indices, skip if j !> i
-        incl_indices = np.setdiff1d(atm_indices, excls[i])
+for window_idx, lmbda_for in enumerate(for_lmbdas):
+    print("foreign lambda: {}".format(lmbda_for))
+    for i_frame in range(n_frames):
+        univ.trajectory[i_frame]
+        my_diffs[window_idx, i_frame, 0] = univ.trajectory.time
+        univ.atoms.positions = univ.atoms.positions / 10.0
+        # Calculate VdW energy differences between lambdas
+        u_lmbda = 0.0
+        u_for = 0.0
+        for i in alc_indices:
+            # all atoms separated by more than nrexcl bonds (i.e. not excluded)
+            # Note: If i and j are both in alc_indices, skip if j !> i
+            incl_indices = np.setdiff1d(atm_indices, excls[i])
 
-        # 1-4 pairs
-        pair_indices = pairs[i]
+            # 1-4 pairs
+            pair_indices = pairs[i]
 
-        assert np.intersect1d(incl_indices, pair_indices).size == 0, "Double counting some pairs as 14 pairs!!"
+            assert np.intersect1d(incl_indices, pair_indices).size == 0, "Double counting some pairs as 14 pairs!!"
 
-        atm_i = univ.atoms[i]
-        # from tpr file, should be A state topology 
-        type_i = type_lookup[atm_i.type]
-        name_i_a, name_i_b = alc_types[i]
-        type_i_a = type_lookup[name_i_a]
-        type_i_b = type_lookup[name_i_b]
+            atm_i = univ.atoms[i]
+            # from tpr file, should be A state topology 
+            type_i = type_lookup[atm_i.type]
+            name_i_a, name_i_b = alc_types[i]
+            type_i_a = type_lookup[name_i_a]
+            type_i_b = type_lookup[name_i_b]
 
-        assert type_i == type_i_a
+            assert type_i == type_i_a
 
-        for j in incl_indices:
+            for j in incl_indices:
 
-            atm_j = univ.atoms[j]
-            if j in alc_indices:
-                if j < i:
+                atm_j = univ.atoms[j]
+                if j in alc_indices:
+                    if j < i:
+                        continue
+                    name_j_a, name_j_b = alc_types[j]
+                    type_j_a = type_lookup[name_j_a]
+                    type_j_b = type_lookup[name_j_b]
+                else:
+                    type_j_a = type_j_b = type_lookup[atm_j.type]  
+
+                #print("j: {}".format(j))
+                #print("  type a: {}, type b: {}".format(type_j_a, type_j_b))      
+
+                lut_idx_a = type_i_a * n_atmtype + type_j_a
+                lut_idx_b = type_i_b * n_atmtype + type_j_b
+
+                r_ij_sq = np.sum((atm_i.position - atm_j.position)**2)
+                #print("  r_ij_sq: {}".format(r_ij_sq))
+                if r_ij_sq >= 1:
                     continue
-                name_j_a, name_j_b = alc_types[j]
-                type_j_a = type_lookup[name_j_a]
-                type_j_b = type_lookup[name_j_a]
-            else:
-                type_j_a = type_j_b = type_lookup[atm_j.type]  
 
-            #print("j: {}".format(j))
-            #print("  type a: {}, type b: {}".format(type_j_a, type_j_b))      
+                # state A params for i
+                c6_a = c6_lut[lut_idx_a]
+                c12_a = c12_lut[lut_idx_a]
+                sig_a = sig_lut[lut_idx_a]
+                sig6_a = sig6_lut[lut_idx_a]
 
-            lut_idx_a = type_i_a * n_atmtype + type_j_a
-            lut_idx_b = type_i_b * n_atmtype + type_j_b
+                c6_b = c6_lut[lut_idx_b]
+                c12_b = c12_lut[lut_idx_b]
+                sig_b = sig_lut[lut_idx_b]
+                sig6_b = sig6_lut[lut_idx_b]  
 
-            r_ij_sq = np.sum((atm_i.position - atm_j.position)**2)
-            #print("  r_ij_sq: {}".format(r_ij_sq))
-            if r_ij_sq >= 1:
-                continue
+                denom_lmbda_a = (sc_alpha*sig6_a*lmbda + r_ij_sq**3)
+                denom_for_a = (sc_alpha*sig6_a*lmbda_for + r_ij_sq**3)
 
-            # state A params for i
-            c6_a = c6_lut[lut_idx_a]
-            c12_a = c12_lut[lut_idx_a]
-            sig_a = sig_lut[lut_idx_a]
-            sig6_a = sig6_lut[lut_idx_a]
+                denom_lmbda_b = (sc_alpha*sig6_b*(1-lmbda) + r_ij_sq**3)
+                denom_for_b = (sc_alpha*sig6_b*(1-lmbda_for) + r_ij_sq**3)
 
-            c6_b = c6_lut[lut_idx_b]
-            c12_b = c12_lut[lut_idx_b]
-            sig_b = sig_lut[lut_idx_b]
-            sig6_b = sig6_lut[lut_idx_b]  
+                this_u_lmbda = (1-lmbda) * ((c12_a/denom_lmbda_a**2) - (c6_a/denom_lmbda_a)) + (lmbda) * ( (c12_b/denom_lmbda_b**2) - (c6_b/denom_lmbda_b))
+                this_u_for = (1-lmbda_for) * ((c12_a/denom_for_a**2) - (c6_a/denom_for_a)) + (lmbda_for) * ( (c12_b/denom_for_b**2) - (c6_b/denom_for_b))
+                #print("  u_lmbda contrib: {}".format(this_u_lmbda))
+                #print("  u_for contrib: {}".format(this_u_for))
+                u_lmbda += this_u_lmbda
+                u_for += this_u_for
 
-            denom_lmbda_a = (sc_alpha*sig6_a*lmbda + r_ij_sq**3)
-            denom_for_a = (sc_alpha*sig6_a*lmbda_for + r_ij_sq**3)
+            for j in pair_indices:
 
-            denom_lmbda_b = (sc_alpha*sig6_b*(1-lmbda) + r_ij_sq**3)
-            denom_for_b = (sc_alpha*sig6_b*(1-lmbda_for) + r_ij_sq**3)
+                atm_j = univ.atoms[j]
+                if j in alc_indices:
+                    if j < i:
+                        continue
+                    name_j_a, name_j_b = alc_types[j]
+                    type_j_a = type_lookup[name_j_a]
+                    type_j_b = type_lookup[name_j_b]
+                else:
+                    type_j_a = type_j_b = type_lookup[atm_j.type]  
 
-            this_u_lmbda = (1-lmbda) * ((c12_a/denom_lmbda_a**2) - (c6_a/denom_lmbda_a)) + (lmbda) * ( (c12_b/denom_lmbda_b**2) - (c6_b/denom_lmbda_b))
-            this_u_for = (1-lmbda_for) * ((c12_a/denom_for_a**2) - (c6_a/denom_for_a)) + (lmbda_for) * ( (c12_b/denom_for_b**2) - (c6_b/denom_for_b))
-            #print("  u_lmbda contrib: {}".format(this_u_lmbda))
-            #print("  u_for contrib: {}".format(this_u_for))
-            u_lmbda += this_u_lmbda
-            u_for += this_u_for
+                #print("j (14 pair): {}".format(j))
+                #print("  type a: {}, type b: {}".format(type_j_a, type_j_b))      
 
-        for j in pair_indices:
+                lut_idx_a = type_i_a * n_atmtype + type_j_a
+                lut_idx_b = type_i_b * n_atmtype + type_j_b
 
-            atm_j = univ.atoms[j]
-            if j in alc_indices:
-                if j < i:
+                r_ij_sq = np.sum((atm_i.position - atm_j.position)**2)
+                #print("  r_ij_sq: {}".format(r_ij_sq))
+                if r_ij_sq >= 1:
                     continue
-                name_j_a, name_j_b = alc_types[j]
-                type_j_a = type_lookup[name_j_a]
-                type_j_b = type_lookup[name_j_a]
-            else:
-                type_j_a = type_j_b = type_lookup[atm_j.type]  
 
-            #print("j (14 pair): {}".format(j))
-            #print("  type a: {}, type b: {}".format(type_j_a, type_j_b))      
+                # state A params for i
+                c6_a = c6_lut[lut_idx_a]
+                c12_a = c12_lut[lut_idx_a]
+                sig_a = sig_lut[lut_idx_a]
+                sig6_a = sig6_lut[lut_idx_a]
 
-            lut_idx_a = type_i_a * n_atmtype + type_j_a
-            lut_idx_b = type_i_b * n_atmtype + type_j_b
+                c6_b = c6_lut[lut_idx_b]
+                c12_b = c12_lut[lut_idx_b]
+                sig_b = sig_lut[lut_idx_b]
+                sig6_b = sig6_lut[lut_idx_b]  
 
-            r_ij_sq = np.sum((atm_i.position - atm_j.position)**2)
-            #print("  r_ij_sq: {}".format(r_ij_sq))
-            if r_ij_sq >= 1:
-                continue
+                denom_lmbda_a = (sc_alpha*sig6_a*lmbda + r_ij_sq**3)
+                denom_for_a = (sc_alpha*sig6_a*lmbda_for + r_ij_sq**3)
 
-            # state A params for i
-            c6_a = c6_lut[lut_idx_a]
-            c12_a = c12_lut[lut_idx_a]
-            sig_a = sig_lut[lut_idx_a]
-            sig6_a = sig6_lut[lut_idx_a]
+                denom_lmbda_b = (sc_alpha*sig6_b*(1-lmbda) + r_ij_sq**3)
+                denom_for_b = (sc_alpha*sig6_b*(1-lmbda_for) + r_ij_sq**3)
 
-            c6_b = c6_lut[lut_idx_b]
-            c12_b = c12_lut[lut_idx_b]
-            sig_b = sig_lut[lut_idx_b]
-            sig6_b = sig6_lut[lut_idx_b]  
-
-            denom_lmbda_a = (sc_alpha*sig6_a*lmbda + r_ij_sq**3)
-            denom_for_a = (sc_alpha*sig6_a*lmbda_for + r_ij_sq**3)
-
-            denom_lmbda_b = (sc_alpha*sig6_b*(1-lmbda) + r_ij_sq**3)
-            denom_for_b = (sc_alpha*sig6_b*(1-lmbda_for) + r_ij_sq**3)
-
-            this_u_lmbda = fudge_vdw * ((1-lmbda) * ((c12_a/denom_lmbda_a**2) - (c6_a/denom_lmbda_a)) + (lmbda) * ( (c12_b/denom_lmbda_b**2) - (c6_b/denom_lmbda_b)))
-            this_u_for = fudge_vdw * ((1-lmbda_for) * ((c12_a/denom_for_a**2) - (c6_a/denom_for_a)) + (lmbda_for) * ( (c12_b/denom_for_b**2) - (c6_b/denom_for_b)))
-            #print("  u_lmbda contrib: {}".format(this_u_lmbda))
-            #print("  u_for contrib: {}".format(this_u_for))
-            u_lmbda += this_u_lmbda
-            u_for += this_u_for
+                this_u_lmbda = fudge_vdw * ((1-lmbda) * ((c12_a/denom_lmbda_a**2) - (c6_a/denom_lmbda_a)) + (lmbda) * ( (c12_b/denom_lmbda_b**2) - (c6_b/denom_lmbda_b)))
+                this_u_for = fudge_vdw * ((1-lmbda_for) * ((c12_a/denom_for_a**2) - (c6_a/denom_for_a)) + (lmbda_for) * ( (c12_b/denom_for_b**2) - (c6_b/denom_for_b)))
+                #print("  u_lmbda contrib: {}".format(this_u_lmbda))
+                #print("  u_for contrib: {}".format(this_u_for))
+                u_lmbda += this_u_lmbda
+                u_for += this_u_for
 
 
-    my_diffs[i_frame, 1] = u_for - u_lmbda
-    print("frame {}".format(i_frame))
-    print("u_for {}".format(u_for))
+        my_diffs[window_idx, i_frame, 1] = u_for - u_lmbda
+        print("frame {}".format(i_frame))
+        print("delta u {}".format(u_for - u_lmbda))

@@ -1,0 +1,15 @@
+Simplified version of scheme2 L63A in stateC (i.e. all charges in Ala state, VdW in Leu state; Dummy HB3 has non-zero charge)
+
+Removed all waters and all other residues
+Removed all 14 pair-interactions
+
+State changes to All dummy (A) -> VdW in Ala state (B)
+
+   (i.e. only atom changing is coupling HB3)
+
+   DUM_HC -> HC (HB3)
+   qa=qb=0.0603
+
+   Only relevant interactions are between HB3 and:
+        H (on backbone N)
+        O (on carbonyl backbone C)

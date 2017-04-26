@@ -1,14 +1,14 @@
-Log file opened on Tue Apr 25 15:29:53 2017
-Host: huntsman-ve565-2046.apn.wlan.upenn.edu  pid: 3352  nodeid: 0  nnodes:  1
-The Gromacs distribution was built Tue Mar 14 13:14:50 EDT 2017 by
-nick@huntsman-ve565-0253.apn.wlan.upenn.edu (Darwin 14.5.0 x86_64)
+Log file opened on Wed Apr 26 10:01:49 2017
+Host: nick-ThinkPad-T440p  pid: 26346  nodeid: 0  nnodes:  1
+The Gromacs distribution was built Thu Mar 23 15:14:35 EDT 2017 by
+nick@nick-ThinkPad-T440p (Linux 3.19.0-58-generic x86_64)
 
 
                          :-)  G  R  O  M  A  C  S  (-:
 
-                      GROup of MAchos and Cynical Suckers
+                  Green Red Orange Magenta Azure Cyan Skyblue
 
-                            :-)  VERSION 4.5.3  (-:
+                            :-)  VERSION 4.5.6  (-:
 
         Written by Emile Apol, Rossen Apostolov, Herman J.C. Berendsen,
       Aldert van Buuren, Pär Bjelkmar, Rudi van Drunen, Anton Feenstra, 
@@ -230,7 +230,7 @@ Table routines are used for vdw:     FALSE
 Will do PME sum in reciprocal space.
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-U. Essman, L. Perela, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
+U. Essmann, L. Perera, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
 A smooth particle mesh Ewald method
 J. Chem. Phys. 103 (1995) pp. 8577-8592
 -------- -------- --- Thank You --- -------- --------
@@ -238,25 +238,19 @@ J. Chem. Phys. 103 (1995) pp. 8577-8592
 Will do ordinary reciprocal space Ewald sum.
 Using a Gaussian width (1/beta) of 0.320163 nm for Ewald
 Cut-off's:   NS: 1   Coulomb: 1   LJ: 1
-System total charge, top. A: -0.060 top. B: -0.060
+System total charge, top. A: -0.000 top. B: -0.000
 Generated table with 1000 data points for Ewald.
 Tabscale = 500 points/nm
 Generated table with 1000 data points for LJ6.
 Tabscale = 500 points/nm
 Generated table with 1000 data points for LJ12.
 Tabscale = 500 points/nm
-Generated table with 1000 data points for 1-4 COUL.
-Tabscale = 500 points/nm
-Generated table with 1000 data points for 1-4 LJ6.
-Tabscale = 500 points/nm
-Generated table with 1000 data points for 1-4 LJ12.
-Tabscale = 500 points/nm
 Configuring nonbonded kernels...
 Configuring standard C nonbonded kernels...
 Testing x86_64 SSE2 support... present.
 
 
-There are 10 atoms and 0 charges for free energy perturbation
+There are 11 atoms and 0 charges for free energy perturbation
 Removing pbc first time
 
 Initializing LINear Constraint Solver
@@ -279,678 +273,678 @@ J. Chem. Phys. 126 (2007) pp. 014101
 -------- -------- --- Thank You --- -------- --------
 
 There are: 20 Atoms
-Max number of connections per atom is 103
-Total number of connections is 596
+Max number of connections per atom is 97
+Total number of connections is 500
 Max number of graph edges per atom is 5
 Total number of graph edges is 38
 RMS relative constraint deviation after constraining: 0.00e+00
-Initial temperature: 393.574 K
+Initial temperature: 399.558 K
 
-Started mdrun on node 0 Tue Apr 25 15:29:53 2017
+Started mdrun on node 0 Wed Apr 26 10:01:49 2017
 
            Step           Time         Lambda
               0        0.00000        0.00000
 
 Grid: 3 x 3 x 3 cells
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.72866e+00    2.40001e+01    6.51921e+00    1.20574e+03    1.66007e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    6.70548e+00   -8.57469e+00   -6.65929e+01    1.33654e+03    3.68142e+01
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.37335e+03    1.37335e+03    1.96787e+02    3.03326e+03   -6.28892e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    2.72866e+00    2.40001e+01    6.51921e+00   -3.91928e-01   -9.33895e+00
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -7.24858e+01   -4.89688e+01    3.73740e+01   -1.15948e+01   -1.15948e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    1.99779e+02   -5.22255e+01   -1.43015e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
              10        0.02000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    3.01733e+00    1.12199e+01    6.09152e+00    1.63135e+03    1.71723e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    4.24922e+00   -1.07039e+01   -6.79367e+01    1.74901e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.74901e+03    1.74901e+03    0.00000e+00    4.03196e+03   -1.33846e+05
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    2.50121e+00    1.10511e+01    6.31675e+00   -1.08018e+00   -1.69736e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -7.71288e+01   -7.53136e+01    0.00000e+00   -7.53136e+01   -7.53136e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -6.50328e+01   -1.07532e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
              20        0.04000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    6.95807e-01    4.66454e+00    4.17465e+00    1.35033e+03    1.80649e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.77888e+01   -1.74588e+01   -7.16559e+01    1.46918e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.46918e+03    1.46918e+03    0.00000e+00    3.46955e+03   -7.66441e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    8.14090e-01    1.76995e+01    5.29926e+00    5.90600e-01   -4.52743e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.64829e+01   -1.07354e+02    0.00000e+00   -1.07354e+02   -1.07354e+02
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    1.12108e+01   -1.50771e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
              30        0.06000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.89232e+00    8.22773e+00    4.25318e+00    1.16802e+03    1.91612e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    7.91723e+01   -2.63572e+01   -7.53594e+01    1.35146e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.35146e+03    1.35146e+03    0.00000e+00    3.13851e+03   -5.95820e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    6.63664e+00    5.04386e+01    4.95364e+00    8.38377e-01   -4.87523e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.80977e+01   -7.39828e+01    0.00000e+00   -7.39828e+01   -7.39828e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    1.30598e+01   -1.44570e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
              40        0.08000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    7.78692e-01    1.17289e+01    4.79869e+00    1.36109e+03    1.96562e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.95440e+02   -2.68275e+01   -7.56345e+01    1.66794e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.66794e+03    1.66794e+03    0.00000e+00    3.99206e+03   -7.22238e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    4.46246e+00    5.20984e+01    5.46989e+00    3.52739e+00   -5.78892e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.84581e+01   -8.07893e+01    0.00000e+00   -8.07893e+01   -8.07893e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    4.75260e+01   -1.84228e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
              50        0.10000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.38189e+00    1.45031e+01    3.64422e+00    1.10861e+03    1.88141e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    3.28027e+02   -2.36433e+01   -7.43222e+01    1.54734e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.54734e+03    1.54734e+03    0.00000e+00    3.63763e+03   -5.59234e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    5.10011e+00    1.34725e+01    7.14183e+00    1.43893e+00   -4.36837e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.44135e+01   -1.00944e+02    0.00000e+00   -1.00944e+02   -1.00944e+02
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    1.50787e+01   -2.38621e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
              60        0.12000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.08158e+00    1.66072e+01    3.25894e+00    1.14988e+03    1.84725e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    2.12394e+02   -2.20773e+01   -7.33115e+01    1.47355e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.47355e+03    1.47355e+03    0.00000e+00    3.42519e+03   -6.14604e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    6.50338e+00    2.33832e+01    8.44204e+00    1.30978e+00   -2.55803e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -7.90214e+01   -6.49632e+01    0.00000e+00   -6.49632e+01   -6.49632e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -7.42850e+01   -2.36553e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
              70        0.14000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.60235e+00    1.75431e+01    4.08453e+00    9.66609e+02    1.83302e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.22446e+02   -2.12710e+01   -7.28690e+01    1.20245e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.20245e+03    1.20245e+03    0.00000e+00    2.78201e+03   -3.58491e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.54432e+00    1.16018e+01    7.69181e+00    4.00446e-01   -2.59217e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -7.95998e+01   -8.22832e+01    0.00000e+00   -8.22832e+01   -8.22832e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -6.06168e-01   -1.87332e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
              80        0.16000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.69841e+00    1.23624e+01    5.77570e+00    1.45960e+03    1.88024e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    8.86054e+01   -2.44583e+01   -7.40072e+01    1.65760e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.65760e+03    1.65760e+03    0.00000e+00    3.93211e+03   -8.79216e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    2.32822e+00    2.73656e+01    7.85646e+00    1.78754e+00   -5.13680e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.56970e+01   -9.77271e+01    0.00000e+00   -9.77271e+01   -9.77271e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    4.02404e+00   -1.65161e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
              90        0.18000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.33955e+00    1.08964e+01    4.03952e+00    1.22953e+03    1.94746e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    4.95672e+01   -3.03401e+01   -7.58356e+01    1.38395e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.38395e+03    1.38395e+03    0.00000e+00    3.23618e+03   -4.90803e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    5.73624e+00    5.54299e+01    5.93767e+00    3.35032e+00   -5.88809e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.73210e+01   -7.57477e+01    0.00000e+00   -7.57477e+01   -7.57477e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    4.21409e+01   -1.03966e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             100        0.20000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.55305e+00    1.03510e+01    4.64601e+00    1.91111e+03    1.90352e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.36318e+01   -2.55816e+01   -7.48150e+01    2.03225e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    2.03225e+03    2.03225e+03    0.00000e+00    4.82987e+03   -1.65804e+05
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.01651e+00    3.83843e+01    5.51823e+00   -7.21569e-01   -5.23733e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.64342e+01   -9.26101e+01    0.00000e+00   -9.26101e+01   -9.26101e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    1.93564e+01   -4.36773e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             110        0.22000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.77269e+00    1.29692e+01    4.47432e+00    1.18127e+03    1.87244e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    5.45119e+00   -2.36105e+01   -7.41065e+01    1.29547e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.29547e+03    1.29547e+03    0.00000e+00    2.96209e+03   -6.24713e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    6.33705e+00    2.88661e+01    7.53157e+00    6.37719e-01   -4.78246e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.42264e+01   -8.86786e+01    0.00000e+00   -8.86786e+01   -8.86786e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -1.40173e+02   -1.29940e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             120        0.24000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.13481e+00    1.40058e+01    3.66575e+00    1.16700e+03    1.88659e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    4.92374e+00   -2.48442e+01   -7.42544e+01    1.28129e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.28129e+03    1.28129e+03    0.00000e+00    2.94154e+03   -5.74994e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    4.41999e+00    1.55650e+01    1.23297e+01    1.84425e+00   -2.84923e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.06736e+01   -7.50069e+01    0.00000e+00   -7.50069e+01   -7.50069e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    1.00125e+01   -2.40294e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             130        0.26000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.61697e+00    1.52918e+01    3.45354e+00    1.59455e+03    1.82490e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.72625e+00   -2.02906e+01   -7.26739e+01    1.70716e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.70716e+03    1.70716e+03    0.00000e+00    3.93134e+03   -1.38333e+05
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    1.84323e+00    2.51316e+01    1.33387e+01    4.11615e-01   -4.16848e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.48013e+01   -8.57610e+01    0.00000e+00   -8.57610e+01   -8.57610e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -3.50826e+01   -1.64928e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             140        0.28000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    4.30569e+00    1.13575e+01    3.71593e+00    1.01978e+03    1.82775e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    5.91157e+00   -1.82125e+01   -7.18938e+01    1.13774e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.13774e+03    1.13774e+03    0.00000e+00    2.58633e+03   -4.51103e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    9.74114e+00    3.58260e+01    1.50143e+01    4.13639e+00   -5.31029e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.69285e+01   -7.53136e+01    0.00000e+00   -7.53136e+01   -7.53136e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    1.26100e+02   -2.84710e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             150        0.30000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.17837e+00    1.08941e+01    4.22779e+00    1.40910e+03    1.83689e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    9.09945e+00   -2.07331e+01   -7.28128e+01    1.52565e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.52565e+03    1.52565e+03    0.00000e+00    3.51098e+03   -9.12821e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.28493e+00    4.29376e+01    1.07195e+01    6.79923e+00   -6.13575e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.80296e+01   -8.56459e+01    0.00000e+00   -8.56459e+01   -8.56459e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -3.36452e+01   -2.14191e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             160        0.32000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.10349e+00    1.30905e+01    3.80242e+00    1.46504e+03    1.85251e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    6.91663e+01   -2.29079e+01   -7.38839e+01    1.64066e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.64066e+03    1.64066e+03    0.00000e+00    3.89418e+03   -8.40479e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    4.08073e+00    2.91650e+01    6.13744e+00   -7.83080e-01   -5.03786e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.56727e+01   -9.74512e+01    0.00000e+00   -9.74512e+01   -9.74512e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -4.37762e+01   -5.63842e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             170        0.34000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.48466e+00    1.17930e+01    4.37604e+00    1.33484e+03    1.89790e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    4.32901e+02   -2.33248e+01   -7.43512e+01    1.87751e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.87751e+03    1.87751e+03    0.00000e+00    4.47048e+03   -7.34353e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    8.10344e+00    3.38127e+01    9.69712e+00   -1.15436e+00   -4.26082e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.31788e+01   -7.53280e+01    0.00000e+00   -7.53280e+01   -7.53280e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -9.72802e+01   -9.61933e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             180        0.36000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    3.08726e-01    1.43204e+01    4.15500e+00    1.30937e+03    1.91924e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    2.00662e+03   -2.54044e+01   -7.51933e+01    3.42609e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    3.42609e+03    3.42609e+03    0.00000e+00    8.32382e+03   -2.39425e+05
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    7.97938e-01    3.93740e+01    1.23037e+01   -1.04144e+00   -4.83177e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.50077e+01   -8.18912e+01    0.00000e+00   -8.18912e+01   -8.18912e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -7.58137e+00   -5.50740e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             190        0.38000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.23217e+00    1.39005e+01    5.13252e+00    1.08804e+03    1.91931e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    4.28652e+03   -2.70432e+01   -7.53953e+01    5.48531e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    5.48531e+03    5.48531e+03    0.00000e+00    1.33434e+04   -5.73177e+05
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.53672e+00    3.45996e+01    1.17281e+01    6.07364e+00   -6.09956e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.71786e+01   -9.22361e+01    0.00000e+00   -9.22361e+01   -9.22361e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -4.37703e+01   -1.85790e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             200        0.40000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.85161e+00    1.62984e+01    4.17947e+00    1.25695e+03    1.88330e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.92354e+03   -2.39176e+01   -7.39824e+01    3.29326e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    3.29326e+03    3.29326e+03    0.00000e+00    7.95794e+03   -2.23031e+05
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    6.91297e+00    3.47102e+01    1.13751e+01    8.74372e+00   -6.06218e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.73562e+01   -8.62360e+01    0.00000e+00   -8.62360e+01   -8.62360e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    9.04272e+01   -3.74637e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             210        0.42000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    3.30063e+00    1.60643e+01    3.28785e+00    1.28768e+03    1.81753e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    2.79251e+02   -2.12781e+01   -7.29639e+01    1.67710e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.67710e+03    1.67710e+03    0.00000e+00    3.94338e+03   -7.24813e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.10163e+00    2.36138e+01    1.34314e+01    7.39742e+00   -4.44710e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.47029e+01   -8.16295e+01    0.00000e+00   -8.16295e+01   -8.16295e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    6.08723e+00   -5.85584e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             220        0.44000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.68175e+00    1.04710e+01    3.06447e+00    1.48169e+03    1.86567e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    4.70706e+01   -2.37657e+01   -7.38277e+01    1.63395e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.63395e+03    1.63395e+03    0.00000e+00    3.86019e+03   -8.19019e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    1.63634e+00    2.73387e+01    1.09254e+01    2.24217e+00   -3.77216e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.27318e+01   -7.83107e+01    0.00000e+00   -7.83107e+01   -7.83107e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -3.77851e+01   -2.89238e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             230        0.46000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    4.54234e-01    1.08895e+01    4.00330e+00    1.29071e+03    1.90520e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.28951e+01   -2.72724e+01   -7.50973e+01    1.40710e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.40710e+03    1.40710e+03    0.00000e+00    3.31055e+03   -6.28543e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    6.67439e+00    2.59374e+01    5.80131e+00   -1.90789e+00   -4.49095e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.56161e+01   -9.40204e+01    0.00000e+00   -9.40204e+01   -9.40204e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -8.76043e+01   -5.63959e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             240        0.48000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.04460e+00    1.27609e+01    4.39999e+00    1.26645e+03    1.92658e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    7.18807e+00   -2.89752e+01   -7.56887e+01    1.37984e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.37984e+03    1.37984e+03    0.00000e+00    3.21732e+03   -6.83757e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.40265e+00    5.39702e+01    4.69165e+00    1.52833e+00   -5.52354e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.87065e+01   -8.03490e+01    0.00000e+00   -8.03490e+01   -8.03490e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    1.19399e+01   -6.36063e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             250        0.50000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.82661e+00    1.51069e+01    4.41272e+00    9.39653e+02    1.94238e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    4.70176e+00   -2.99177e+01   -7.55665e+01    1.05545e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.05545e+03    1.05545e+03    0.00000e+00    2.34933e+03   -3.99981e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    4.54934e+00    5.67706e+01    5.35981e+00    7.29076e+00   -6.46698e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.91754e+01   -7.98747e+01    0.00000e+00   -7.98747e+01   -7.98747e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -1.06097e+01   -1.29516e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             260        0.52000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.85463e+00    2.01857e+01    6.35834e+00    1.38879e+03    1.85895e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    5.37127e+00   -2.49327e+01   -7.38869e+01    1.51063e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.51063e+03    1.51063e+03    0.00000e+00    3.45658e+03   -8.86529e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    4.54996e+00    2.50760e+01    4.05286e+00    3.01484e+00   -5.05124e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.64548e+01   -1.00273e+02    0.00000e+00   -1.00273e+02   -1.00273e+02
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    8.90500e+01   -2.54843e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             270        0.54000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    3.15818e+00    1.23075e+01    6.48683e+00    1.10598e+03    1.83216e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    3.53061e+00   -2.20291e+01   -7.27325e+01    1.21992e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.21992e+03    1.21992e+03    0.00000e+00    2.74377e+03   -6.29128e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    1.45298e+00    2.50687e+01    7.19956e+00   -9.67050e-01   -3.19112e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.20443e+01   -8.12012e+01    0.00000e+00   -8.12012e+01   -8.12012e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -8.36178e+00   -1.18009e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             280        0.56000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.57455e+00    9.58127e+00    4.28576e+00    1.13471e+03    1.85623e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.34988e+01   -2.38189e+01   -7.34835e+01    1.25297e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.25297e+03    1.25297e+03    0.00000e+00    2.86855e+03   -4.92781e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    5.93091e+00    2.70143e+01    8.76571e+00   -1.78622e+00   -3.90518e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.31511e+01   -8.22783e+01    0.00000e+00   -8.22783e+01   -8.22783e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -3.80836e+01   -7.34309e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             290        0.58000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    6.46614e-01    1.22158e+01    4.16581e+00    1.35295e+03    1.90702e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    2.93137e+01   -2.83337e+01   -7.52577e+01    1.48640e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.48640e+03    1.48640e+03    0.00000e+00    3.52959e+03   -7.37430e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.14183e+00    3.41857e+01    9.21131e+00    1.50832e+00   -5.55902e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.64808e+01   -9.40239e+01    0.00000e+00   -9.40239e+01   -9.40239e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -3.93641e+01   -8.52590e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             300        0.60000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.39729e+00    1.22221e+01    3.71191e+00    1.52035e+03    1.95275e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    9.60521e+01   -2.94157e+01   -7.57656e+01    1.72382e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.72382e+03    1.72382e+03    0.00000e+00    4.10794e+03   -7.51509e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    1.18018e+01    3.96285e+01    7.48970e+00    8.98906e+00   -6.13117e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.69292e+01   -8.03318e+01    0.00000e+00   -8.03318e+01   -8.03318e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    6.90126e+01   -2.67759e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             310        0.62000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.77979e+00    1.40188e+01    3.87332e+00    1.34596e+03    1.90587e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    2.86633e+02   -2.66690e+01   -7.49249e+01    1.74126e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.74126e+03    1.74126e+03    0.00000e+00    4.16898e+03   -6.36684e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    7.24680e+00    3.63922e+01    8.32271e+00    3.75181e+00   -5.36358e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.47018e+01   -8.26241e+01    0.00000e+00   -8.26241e+01   -8.26241e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -5.60943e+01   -1.94788e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             320        0.64000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.87342e+00    2.37318e+01    3.85334e+00    1.31414e+03    1.83574e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    5.09819e+02   -2.33074e+01   -7.35415e+01    1.94015e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.94015e+03    1.94015e+03    0.00000e+00    4.56899e+03   -9.83139e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    2.44125e+00    2.15241e+01    5.80365e+00    3.97395e-02   -3.74831e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.19778e+01   -8.96522e+01    0.00000e+00   -8.96522e+01   -8.96522e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -5.73766e+01   -1.42379e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             330        0.66000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.30442e+00    2.03003e+01    4.15336e+00    1.17722e+03    1.85067e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    7.28227e+02   -2.20602e+01   -7.30445e+01    2.02217e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    2.02217e+03    2.02217e+03    0.00000e+00    4.79277e+03   -7.85361e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    1.09469e+01    2.62318e+01    4.90705e+00   -1.93458e+00   -3.32633e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.15656e+01   -7.46778e+01    0.00000e+00   -7.46778e+01   -7.46778e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -9.99211e+01   -6.96193e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             340        0.68000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.49526e+00    1.17283e+01    4.18804e+00    1.31597e+03    1.86771e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    8.02386e+02   -2.44243e+01   -7.41138e+01    2.22400e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    2.22400e+03    2.22400e+03    0.00000e+00    5.29065e+03   -1.21696e+05
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    2.55214e+00    3.68224e+01    7.64948e+00    4.40598e+00   -4.99945e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.53306e+01   -8.38951e+01    0.00000e+00   -8.38951e+01   -8.38951e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    1.78507e+01   -3.99557e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             350        0.70000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    8.43661e-01    5.50889e+00    5.74422e+00    1.40311e+03    1.93104e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.81409e+02   -2.86338e+01   -7.57292e+01    1.68536e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.68536e+03    1.68536e+03    0.00000e+00    4.03350e+03   -7.91073e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    7.98352e+00    3.99942e+01    6.55323e+00    5.74896e+00   -6.29927e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.73678e+01   -9.00806e+01    0.00000e+00   -9.00806e+01   -9.00806e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    4.37592e+01   -7.39513e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             360        0.72000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    9.64386e-01    1.22449e+01    5.65529e+00    1.16128e+03    1.93637e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    5.95634e+01   -2.75433e+01   -7.54729e+01    1.33033e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.33033e+03    1.33033e+03    0.00000e+00    3.09580e+03   -4.97746e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    6.00950e+00    3.73560e+01    5.19520e+00    8.90057e+00   -5.84255e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.71322e+01   -8.80965e+01    0.00000e+00   -8.80965e+01   -8.80965e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    3.03210e+01   -3.96777e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             370        0.74000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.09064e+00    2.08321e+01    3.88268e+00    1.84249e+03    1.88773e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.20548e+01   -2.62189e+01   -7.48838e+01    1.96902e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.96902e+03    1.96902e+03    0.00000e+00    4.64502e+03   -1.57031e+05
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    8.58169e+00    2.77450e+01    7.36289e+00    1.61903e+00   -4.32430e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.49486e+01   -8.28830e+01    0.00000e+00   -8.28830e+01   -8.28830e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -4.91447e+01   -2.17901e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             380        0.76000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.51349e+00    1.42275e+01    5.46258e+00    1.05406e+03    1.86145e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    7.72247e+00   -2.37844e+01   -7.37922e+01    1.17155e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.17155e+03    1.17155e+03    0.00000e+00    2.66806e+03   -4.34295e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    4.55627e+00    1.53682e+01    8.58329e+00   -2.35691e-01   -3.00224e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.19576e+01   -8.37081e+01    0.00000e+00   -8.37081e+01   -8.37081e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -6.13537e+00   -1.49159e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             390        0.78000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.01453e+00    1.21827e+01    5.61741e+00    1.25396e+03    1.83334e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    3.48779e+00   -2.05782e+01   -7.26187e+01    1.36740e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.36740e+03    1.36740e+03    0.00000e+00    3.13753e+03   -8.17098e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    2.17554e+00    3.08885e+01    7.29569e+00    4.22953e+00   -4.05454e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.43715e+01   -8.03277e+01    0.00000e+00   -8.03277e+01   -8.03277e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    5.22921e+01   -4.10941e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             400        0.80000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    3.05126e+00    1.34406e+01    4.94083e+00    1.33397e+03    1.84898e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    4.20634e+00   -2.32041e+01   -7.34671e+01    1.44783e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.44783e+03    1.44783e+03    0.00000e+00    3.31008e+03   -8.63947e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.34133e+00    2.83207e+01    5.67090e+00    6.47259e-01   -4.60625e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.63491e+01   -9.44314e+01    0.00000e+00   -9.44314e+01   -9.44314e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -1.34378e+01   -1.70369e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             410        0.82000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.98775e+00    1.12103e+01    3.13598e+00    1.29363e+03    1.93448e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.00017e+01   -2.96252e+01   -7.54127e+01    1.40838e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.40838e+03    1.40838e+03    0.00000e+00    3.26273e+03   -6.93428e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    6.77982e+00    5.60338e+01    4.89744e+00    5.50663e+00   -5.90590e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.80833e+01   -7.39246e+01    0.00000e+00   -7.39246e+01   -7.39246e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -1.81609e+01   -2.20863e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             420        0.84000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.68846e+00    9.97028e+00    4.61655e+00    1.35034e+03    1.88895e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    4.38729e+01   -2.57021e+01   -7.46429e+01    1.49904e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.49904e+03    1.49904e+03    0.00000e+00    3.48438e+03   -8.08397e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.17877e+00    3.18630e+01    5.84158e+00    7.60335e-01   -5.23753e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.61226e+01   -9.68542e+01    0.00000e+00   -9.68542e+01   -9.68542e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    1.58106e+01   -1.07228e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             430        0.86000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.27578e+00    1.06641e+01    6.19274e+00    1.33048e+03    1.89955e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.70431e+02   -2.58613e+01   -7.45687e+01    1.60856e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.60856e+03    1.60856e+03    0.00000e+00    3.84455e+03   -6.33754e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.07813e+00    3.58468e+01    5.48479e+00    2.57327e+00   -5.17941e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.56848e+01   -9.04960e+01    0.00000e+00   -9.04960e+01   -9.04960e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    4.29446e+01   -2.26635e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             440        0.88000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    3.04236e+00    1.44311e+01    5.52840e+00    1.52501e+03    1.91092e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    3.58337e+02   -2.82379e+01   -7.49644e+01    1.99424e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.99424e+03    1.99424e+03    0.00000e+00    4.75105e+03   -8.54893e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    2.54968e+00    1.93906e+01    5.67633e+00   -1.05209e+00   -2.98541e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.22734e+01   -8.55630e+01    0.00000e+00   -8.55630e+01   -8.55630e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -2.01973e+01   -1.24098e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             450        0.90000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.14309e+00    1.63494e+01    4.96420e+00    1.14741e+03    1.84258e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    2.83949e+02   -2.26340e+01   -7.32092e+01    1.54324e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.54324e+03    1.54324e+03    0.00000e+00    3.67640e+03   -5.35432e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    5.97749e+00    3.04305e+01    7.67331e+00   -2.16742e+00   -3.72163e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.39302e+01   -7.92326e+01    0.00000e+00   -7.92326e+01   -7.92326e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -8.92244e+01   -6.21954e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             460        0.92000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.77960e+00    1.82346e+01    5.27209e+00    9.76852e+02    1.85337e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.33750e+02   -2.24639e+01   -7.29657e+01    1.22580e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.22580e+03    1.22580e+03    0.00000e+00    2.79146e+03   -4.03375e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.91409e+00    3.17811e+01    6.31986e+00    5.21380e+00   -5.82492e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.56898e+01   -9.67101e+01    0.00000e+00   -9.67101e+01   -9.67101e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    8.52097e-01   -1.59992e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             470        0.94000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    3.44318e+00    1.29380e+01    5.54505e+00    1.08708e+03    1.89698e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    6.39775e+01   -2.70768e+01   -7.45750e+01    1.26103e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.26103e+03    1.26103e+03    0.00000e+00    2.91569e+03   -4.65485e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.43548e+00    4.81035e+01    6.74747e+00    1.60608e+01   -6.57916e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.68199e+01   -7.82643e+01    0.00000e+00   -7.82643e+01   -7.82643e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    6.16987e+01   -3.38481e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             480        0.96000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    1.85311e+00    9.16232e+00    4.69646e+00    1.19001e+03    1.91444e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    2.59045e+01   -2.77713e+01   -7.52808e+01    1.32001e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.32001e+03    1.32001e+03    0.00000e+00    3.08644e+03   -5.58920e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    3.68866e+00    3.36644e+01    7.30606e+00    8.27479e+00   -6.18717e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.72377e+01   -9.61755e+01    0.00000e+00   -9.61755e+01   -9.61755e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00    6.14025e+01   -2.25285e+01    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             490        0.98000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    3.70447e-01    7.93055e+00    3.45911e+00    1.28984e+03    1.95097e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    1.12974e+01   -2.82793e+01   -7.54922e+01    1.40422e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.40422e+03    1.40422e+03    0.00000e+00    3.28514e+03   -7.39043e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    9.15844e+00    2.59745e+01    9.48918e+00   -1.27206e+00   -3.71070e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.37389e+01   -7.74958e+01    0.00000e+00   -7.74958e+01   -7.74958e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -1.00845e+02   -9.39010e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
            Step           Time         Lambda
             500        1.00000        0.00000
 
    Energies (kJ/mol)
-           Bond          Angle    Proper Dih.          LJ-14     Coulomb-14
-    2.20266e+00    1.31157e+01    4.25918e+00    1.00807e+03    1.88439e+02
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    9.56828e+00   -2.62271e+01   -7.47073e+01    1.12472e+03    0.00000e+00
-   Total Energy  Conserved En.    Temperature Pressure (bar)  dVpot/dlambda
-    1.12472e+03    1.12472e+03    0.00000e+00    2.54550e+03   -4.23365e+04
-  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    0.00000e+00    0.00000e+00    0.00000e+00
+           Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
+    6.80839e+00    2.00263e+01    9.46954e+00   -1.76366e+00   -3.37861e+01
+   Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
+   -8.25772e+01   -8.18228e+01    0.00000e+00   -8.18228e+01   -8.18228e+01
+    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
+    0.00000e+00   -8.17305e+01   -7.77202e+00    0.00000e+00    0.00000e+00
+   Constr. rmsd
+    0.00000e+00
 
 
 	M E G A - F L O P S   A C C O U N T I N G
@@ -961,16 +955,14 @@ Grid: 3 x 3 x 3 cells
 
  Computing:                               M-Number         M-Flops  % Flops
 -----------------------------------------------------------------------------
- LJ                                       0.000102           0.003     0.0
  Coul(T) + LJ                             0.000255           0.014     0.0
- Free energy innerloop                    0.053040           7.956     3.7
- Outer nonbonded loop                     0.011475           0.115     0.1
- 1,4 nonbonded interactions               0.022644           2.038     0.9
+ Free energy innerloop                    0.054366           8.155     3.8
+ Outer nonbonded loop                     0.012699           0.127     0.1
  Calc Weights                             0.003060           0.110     0.1
  Spread Q Bspline                         0.065280           0.131     0.1
  Gather F Bspline                         0.065280           0.392     0.2
- 3D-FFT                                  22.203360         177.627    82.2
- Solve PME                                0.414375          26.520    12.3
+ 3D-FFT                                  22.203360         177.627    82.9
+ Solve PME                                0.414375          26.520    12.4
  NS-Pairs                                 0.010710           0.225     0.1
  Reset In Box                             0.001020           0.003     0.0
  Shift-X                                  0.001020           0.006     0.0
@@ -979,9 +971,10 @@ Grid: 3 x 3 x 3 cells
  Angles                                   0.001836           0.308     0.1
  Propers                                  0.002703           0.619     0.3
  Virial                                   0.003315           0.060     0.0
+ Stop-CM                                  0.001040           0.010     0.0
  Calc-Ekin                                0.001040           0.028     0.0
 -----------------------------------------------------------------------------
- Total                                                     216.179   100.0
+ Total                                                     214.359   100.0
 -----------------------------------------------------------------------------
 
 
@@ -989,21 +982,21 @@ Grid: 3 x 3 x 3 cells
 
  Computing:         Nodes     Number     G-Cycles    Seconds     %
 -----------------------------------------------------------------------
- Neighbor search        1         51        0.005        0.0     2.4
- Force                  1         51        0.052        0.0    24.3
- PME mesh               1         51        0.145        0.0    67.9
- Rest                   1                   0.012        0.0     5.4
+ Neighbor search        1         51        0.003        0.0     3.5
+ Force                  1         51        0.019        0.0    25.1
+ PME mesh               1         51        0.045        0.0    60.3
+ Rest                   1                   0.008        0.0    11.1
 -----------------------------------------------------------------------
- Total                  1                   0.214        0.1   100.0
+ Total                  1                   0.074        0.0   100.0
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
- PME spread/gather      1        102        0.040        0.0    18.6
- PME 3D-FFT             1        102        0.024        0.0    11.3
- PME solve              1         51        0.081        0.0    38.0
+ PME spread/gather      1        102        0.003        0.0     4.7
+ PME 3D-FFT             1        102        0.018        0.0    24.5
+ PME solve              1         51        0.023        0.0    30.9
 -----------------------------------------------------------------------
 
                NODE (s)   Real (s)      (%)
-       Time:      0.065      0.065     99.8
+       Time:      0.027      0.028     98.9
                (Mnbf/s)   (GFlops)   (ns/day)  (hour/ns)
-Performance:      0.006      3.343   1338.914      0.018
-Finished mdrun on node 0 Tue Apr 25 15:29:53 2017
+Performance:      0.009      7.873   3179.784      0.008
+Finished mdrun on node 0 Wed Apr 26 10:01:49 2017

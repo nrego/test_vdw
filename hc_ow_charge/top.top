@@ -16,7 +16,7 @@ DUM             1
 [ atoms ]
 ; nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
    1        DUM_HC     1    DUM    HB3      1        0.5      1.008   HC     0.5    1.008 
-   2        OW_spc 1    SOL   OW            2       0.0     15.9994
+   2        OW_spc 1    SOL   OW            2       -0.5     15.9994
 
 
 [ system ]

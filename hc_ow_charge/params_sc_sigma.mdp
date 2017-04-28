@@ -8,7 +8,7 @@ dt              = 0.002
 ; set to taste
 nsteps          = 500 ; 1 ps
 
-comm-mode       = Linear
+comm-mode       = None
 nstcomm         = 10
 comm-grps       = System
 
@@ -16,7 +16,6 @@ comm-grps       = System
 nstxout         = 10
 nstvout         = 10
 nstfout         = 10
-nstxtcout       = 0
 ; Change if you want to output energies more often
 nstenergy       = 10
 nstlog          = 500
@@ -28,8 +27,9 @@ pbc             = xyz
 rlist           = 1.0
 
 ; ELECTROSTATICS
-coulombtype     = PME
-rcoulomb        = 1.0
+coulombtype     = PME-Switch
+rcoulomb        = 0.0001
+rcouloumb-switch =0.0005
 
 ; EWALD stuff
 fourierspacing  = 0.12
@@ -51,7 +51,7 @@ tau_t           = 0.5
 ref_t           = 300
 
 ; VELOCITY GENERATION
-gen_vel         = yes
+gen_vel         = no
 gen_temp        = 300
 gen_seed        = -1
 
@@ -63,9 +63,8 @@ lincs_iter           = 1
 continuation         = no
 
 free_energy     = yes
-init_lambda     = 0.0
+init_lambda     = 0.5
 foreign_lambda  = 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
 sc_alpha        = 0.5
 sc_power        = 1
-sc-sigma        = 0.3
-
+sc_sigma        = 0.3

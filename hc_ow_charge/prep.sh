@@ -7,8 +7,11 @@ rm -f *.tpr \#* no_sc* sc_no_sigma* sc_sigma* traj* confout* ener*
 
 rm *.pdb
 
-grompp -f params.mdp -c struct_single.gro -p top.top -o run.tpr -maxwarn 2
-mdrun -s run.tpr -v
-
+#grompp -f params.mdp -c struct_single.gro -p top.top -o run.tpr -maxwarn 2
+#mdrun -s run.tpr -v
+cd ../hc_ow
+./prep.sh
+cd ../hc_ow_charge
+cp ../hc_ow/traj.trr .
 
 rm \#*

@@ -27,7 +27,7 @@ pbc             = xyz
 rlist           = 1.0
 
 ; ELECTROSTATICS
-coulombtype     = PME
+coulombtype     = Cut-Off
 rcoulomb        = 1.0
 
 ; EWALD stuff

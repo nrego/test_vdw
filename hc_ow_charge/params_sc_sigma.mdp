@@ -27,9 +27,8 @@ pbc             = xyz
 rlist           = 1.0
 
 ; ELECTROSTATICS
-coulombtype     = PME-Switch
-rcoulomb        = 0.0001
-rcouloumb-switch =0.0005
+coulombtype     = Cut-Off
+rcoulomb        = 1.0
 
 ; EWALD stuff
 fourierspacing  = 0.12
@@ -68,3 +67,4 @@ foreign_lambda  = 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
 sc_alpha        = 0.5
 sc_power        = 1
 sc_sigma        = 0.3
+

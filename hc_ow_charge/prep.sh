@@ -14,4 +14,4 @@ cd ../hc_ow
 cd ../hc_ow_charge
 cp ../hc_ow/traj.trr .
 
-rm \#*
+rm -f \#*

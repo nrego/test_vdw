@@ -166,7 +166,7 @@ fudge_vdw = 0.5
 
 
 lmbda = 0.0
-for_lmbdas = [0.1, 0.5, 0.9, 1.0]
+for_lmbdas = [0.5, 1.0]
 
 n_frames = univ.trajectory.n_frames
 #n_frames = 1

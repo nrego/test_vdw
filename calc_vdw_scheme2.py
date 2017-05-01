@@ -6,15 +6,40 @@ import MDAnalysis
 import numpy as np
 
 import argparse
-try:
-    u_for_prev = u_for
-except:
-    pass
-univ = MDAnalysis.Universe('sc_sigma.tpr', 'traj.xtc')
-from mdtools import dr
 
-alc_indices = np.arange(878, 888)
-#alc_indices = [877]
+parser = argparse.ArgumentParser('find VdW for scheme3')
+parser.add_argument('-s', '--tprfile', metavar='TPR', required=True, type=str,
+                    help='TPR file')
+parser.add_argument('-f', '--xtcfile', metavar='XTC', required=True, type=str,
+                    help='XTC file')
+parser.add_argument('--lmbda', metavar='LMBDA', default=0.0, type=float,
+                    help='Initial lambda value')
+parser.add_argument('--sc-alpha', metavar='SC_ALPHA', default=0.5, type=float,
+                    help='Alpha value for SC LJ (default: 0.5)')
+parser.add_argument('--sc-sigma', metavar='SC_SIGMA', default=0.3, type=float,
+                    help='SC minimum sigma (default: 0.3 nm)')
+args = parser.parse_args()
+
+# set combined sigma to this if it's smaller
+sc_sigma = args.sc_sigma
+sc_sigma6 = sc_sigma**6
+sc_alpha = args.sc_alpha
+
+lmbda = args.lmbda
+
+if lmbda == 1.0:
+    for_lmbdas = [0.9]
+elif lmbda == 0.0:
+    for_lmbdas = [0.1]
+else:
+    for_lmbdas = [lmbda-0.1, lmbda+0.1]
+
+tprfile = args.tprfile
+xtcfile = args.xtcfile
+
+univ = MDAnalysis.Universe(tprfile, xtcfile)
+
+alc_indices = np.arange(877, 888)
 atm_indices = np.arange(univ.atoms.n_atoms)
 
 
@@ -57,7 +82,7 @@ pairs = {
 #    valued by tuple (Astate_idx, Bstate_idx)
 #  NOTE: This is topology specific!!!
 alc_types = {
-    #877: ('HC', 'HC'),
+    877: ('DUM_HC', 'HC'),
     878: ('CT', 'DUM_CT'),
     879: ('HC', 'DUM_HC'),
     880: ('CT', 'DUM_CT'),
@@ -129,11 +154,6 @@ atmtypes = [
 ]
 
 
-# set combined sigma to this if it's smaller
-sc_sigma = 0.3
-sc_sigma6 = sc_sigma**6
-sc_alpha = 0.5
-
 n_atmtype = len(atmtypes)
 # Generate VdW lookup table
 c6_lut = np.zeros(n_atmtype**2)
@@ -164,19 +184,18 @@ for i, payload_i in enumerate(atmtypes):
 
 fudge_vdw = 0.5
 
-
-lmbda = 0.0
-for_lmbdas = [0.1]
-
 n_frames = univ.trajectory.n_frames
 n_frames = 1
-my_diffs = np.zeros((len(for_lmbdas), n_frames, 2))
+my_diffs = np.zeros((n_frames, len(for_lmbdas)+1))
 
 for window_idx, lmbda_for in enumerate(for_lmbdas):
     print("foreign lambda: {}".format(lmbda_for))
     for i_frame in range(n_frames):
         univ.trajectory[i_frame]
-        my_diffs[window_idx, i_frame, 0] = univ.trajectory.time
+        if my_diffs[i_frame, 0] == 0.0:
+            my_diffs[i_frame, 0] = univ.trajectory.time
+        elif my_diffs[i_frame, 0] != univ.trajectory.time:
+            print("WARNING: DIFFERENT TIMES: {}  {}".format(my_diffs[i_frame,0], univ.trajectory.time))
         univ.atoms.positions = univ.atoms.positions / 10.0
         # Calculate VdW energy differences between lambdas
         u_lmbda = 0.0
@@ -295,6 +314,15 @@ for window_idx, lmbda_for in enumerate(for_lmbdas):
                 u_for += this_u_for
 
 
-        my_diffs[window_idx, i_frame, 1] = u_for - u_lmbda
+        my_diffs[i_frame, window_idx+1] = u_for - u_lmbda
         print("frame {}".format(i_frame))
         print("delta u {}".format(u_for - u_lmbda))
+
+
+print("saving data")
+
+headerstr = 'time (ps)' + ''.join(['     for_lmbda={}'.format(for_lmbda) for for_lmbda in for_lmbdas])
+np.savetxt('diffs_{}.dat'.format(lmbda), my_diffs, header=headerstr)
+
+
+

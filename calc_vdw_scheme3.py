@@ -30,7 +30,7 @@ lmbda = args.lmbda
 if lmbda == 1.0:
     for_lmbdas = [0.9]
 elif lmbda == 0.0:
-    for_lmbdas = [0.0]
+    for_lmbdas = [0.1]
 else:
     for_lmbdas = [lmbda-0.1, lmbda+0.1]
 
@@ -39,7 +39,7 @@ xtcfile = args.xtcfile
 
 univ = MDAnalysis.Universe(tprfile, xtcfile)
 
-alc_indices = np.arange(877, 888)
+alc_indices = np.arange(878, 888)
 atm_indices = np.arange(univ.atoms.n_atoms)
 
 
@@ -82,7 +82,7 @@ pairs = {
 #    valued by tuple (Astate_idx, Bstate_idx)
 #  NOTE: This is topology specific!!!
 alc_types = {
-    877: ('HC', 'HC'),
+    #877: ('HC', 'HC'),
     878: ('CT', 'DUM_CT'),
     879: ('HC', 'DUM_HC'),
     880: ('CT', 'DUM_CT'),
@@ -185,14 +185,17 @@ for i, payload_i in enumerate(atmtypes):
 fudge_vdw = 0.5
 
 n_frames = univ.trajectory.n_frames
-#n_frames = 1
-my_diffs = np.zeros((len(for_lmbdas), n_frames, 2))
+n_frames = 1
+my_diffs = np.zeros((n_frames, len(for_lmbdas)+1))
 
 for window_idx, lmbda_for in enumerate(for_lmbdas):
     print("foreign lambda: {}".format(lmbda_for))
     for i_frame in range(n_frames):
         univ.trajectory[i_frame]
-        my_diffs[window_idx, i_frame, 0] = univ.trajectory.time
+        if my_diffs[i_frame, 0] == 0.0:
+            my_diffs[i_frame, 0] = univ.trajectory.time
+        elif my_diffs[i_frame, 0] != univ.trajectory.time:
+            print("WARNING: DIFFERENT TIMES: {}  {}".format(my_diffs[i_frame,0], univ.trajectory.time))
         univ.atoms.positions = univ.atoms.positions / 10.0
         # Calculate VdW energy differences between lambdas
         u_lmbda = 0.0
@@ -311,6 +314,16 @@ for window_idx, lmbda_for in enumerate(for_lmbdas):
                 u_for += this_u_for
 
 
-        my_diffs[window_idx, i_frame, 1] = u_for - u_lmbda
+        my_diffs[i_frame, window_idx+1] = u_for - u_lmbda
         print("frame {}".format(i_frame))
         print("delta u {}".format(u_for - u_lmbda))
+
+
+
+print("saving data")
+
+headerstr = 'time (ps)' + ''.join(['     for_lmbda={}'.format(for_lmbda) for for_lmbda in for_lmbdas])
+np.savetxt('diffs_{}.dat'.format(lmbda), my_diffs, header=headerstr)
+
+
+

@@ -9,3 +9,5 @@ confout.gro
 *.npz
 mdout.mdp
 .DS_Store
+*.dat
+

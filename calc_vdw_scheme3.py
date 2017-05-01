@@ -27,13 +27,19 @@ sc_alpha = args.sc_alpha
 
 lmbda = args.lmbda
 
+if lmbda == 1.0:
+    for_lmbdas = [0.9]
+elif lmbda == 0.0:
+    for_lmbdas = [0.0]
+else:
+    for_lmbdas = [lmbda-0.1, lmbda+0.1]
+
 tprfile = args.tprfile
 xtcfile = args.xtcfile
 
 univ = MDAnalysis.Universe(tprfile, xtcfile)
 
 alc_indices = np.arange(877, 888)
-#alc_indices = [877]
 atm_indices = np.arange(univ.atoms.n_atoms)
 
 
@@ -148,8 +154,6 @@ atmtypes = [
 ]
 
 
-
-
 n_atmtype = len(atmtypes)
 # Generate VdW lookup table
 c6_lut = np.zeros(n_atmtype**2)
@@ -179,8 +183,6 @@ for i, payload_i in enumerate(atmtypes):
         sig6_lut[idx] = sig_6
 
 fudge_vdw = 0.5
-
-for_lmbdas = [0.1, 0.5, 0.9, 1.0]
 
 n_frames = univ.trajectory.n_frames
 #n_frames = 1

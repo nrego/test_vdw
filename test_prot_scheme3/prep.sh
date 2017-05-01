@@ -6,7 +6,9 @@ rm -f *.tpr \#* no_sc* sc_no_sigma* sc_sigma* traj* confout* ener*
 #mdrun -s em.tpr -c struct_single.gro
 
 rm *.pdb
-cp ../test_prot_scheme2/traj.xtc .
+
+grompp -f params.mdp -c stateC_bulk.gro -p step2.top -o run.tpr -maxwarn 2
+mdrun -s run.tpr -v
 
 
 rm -f \#*

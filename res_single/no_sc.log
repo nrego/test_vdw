@@ -1,14 +1,14 @@
-Log file opened on Wed Apr 26 10:01:49 2017
-Host: nick-ThinkPad-T440p  pid: 26344  nodeid: 0  nnodes:  1
-The Gromacs distribution was built Thu Mar 23 15:14:35 EDT 2017 by
-nick@nick-ThinkPad-T440p (Linux 3.19.0-58-generic x86_64)
+Log file opened on Mon May  1 14:46:57 2017
+Host: huntsman-ve565-3700.apn.wlan.upenn.edu  pid: 9965  nodeid: 0  nnodes:  1
+The Gromacs distribution was built Tue Mar 14 13:14:50 EDT 2017 by
+nick@huntsman-ve565-0253.apn.wlan.upenn.edu (Darwin 14.5.0 x86_64)
 
 
                          :-)  G  R  O  M  A  C  S  (-:
 
-                  Green Red Orange Magenta Azure Cyan Skyblue
+                               Grunge ROck MAChoS
 
-                            :-)  VERSION 4.5.6  (-:
+                            :-)  VERSION 4.5.3  (-:
 
         Written by Emile Apol, Rossen Apostolov, Herman J.C. Berendsen,
       Aldert van Buuren, Pär Bjelkmar, Rudi van Drunen, Anton Feenstra, 
@@ -230,7 +230,7 @@ Table routines are used for vdw:     FALSE
 Will do PME sum in reciprocal space.
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-U. Essmann, L. Perera, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
+U. Essman, L. Perela, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
 A smooth particle mesh Ewald method
 J. Chem. Phys. 103 (1995) pp. 8577-8592
 -------- -------- --- Thank You --- -------- --------
@@ -278,9 +278,9 @@ Total number of connections is 500
 Max number of graph edges per atom is 5
 Total number of graph edges is 38
 RMS relative constraint deviation after constraining: 0.00e+00
-Initial temperature: 391.917 K
+Initial temperature: 392.057 K
 
-Started mdrun on node 0 Wed Apr 26 10:01:49 2017
+Started mdrun on node 0 Mon May  1 14:46:58 2017
 
            Step           Time         Lambda
               0        0.00000        0.00000
@@ -290,9 +290,9 @@ Grid: 3 x 3 x 3 cells
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
     2.72866e+00    2.40001e+01    6.51921e+00   -3.91928e-01   -9.33895e+00
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -7.24858e+01   -4.89688e+01    3.66593e+01   -1.23095e+01   -1.23095e+01
+   -7.24858e+01   -4.89688e+01    3.66723e+01   -1.22964e+01   -1.22964e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    1.95959e+02   -5.25185e+01   -2.25274e-01    0.00000e+00    0.00000e+00
+    1.96029e+02   -5.25131e+01   -2.25274e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -301,11 +301,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    2.50121e+00    1.10511e+01    6.31675e+00   -1.08018e+00   -1.69736e+01
+    2.50121e+00    1.10508e+01    6.31675e+00   -1.08021e+00   -1.69736e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -7.71288e+01   -7.53136e+01    0.00000e+00   -7.53136e+01   -7.53136e+01
+   -7.71288e+01   -7.53139e+01    0.00000e+00   -7.53139e+01   -7.53139e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -6.50328e+01    4.75584e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -6.50328e+01    4.75620e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -314,11 +314,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    8.14090e-01    1.76995e+01    5.29926e+00    5.90600e-01   -4.52743e+01
+    8.13965e-01    1.76995e+01    5.29929e+00    5.90437e-01   -4.52739e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.64829e+01   -1.07354e+02    0.00000e+00   -1.07354e+02   -1.07354e+02
+   -8.64828e+01   -1.07353e+02    0.00000e+00   -1.07353e+02   -1.07353e+02
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    1.12108e+01   -5.29551e-01    0.00000e+00    0.00000e+00
+    0.00000e+00    1.12068e+01   -5.29420e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -327,11 +327,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    6.63664e+00    5.04386e+01    4.95364e+00    8.38377e-01   -4.87523e+01
+    6.63566e+00    5.04395e+01    4.95361e+00    8.38534e-01   -4.87522e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.80977e+01   -7.39828e+01    0.00000e+00   -7.39828e+01   -7.39828e+01
+   -8.80977e+01   -7.39826e+01    0.00000e+00   -7.39826e+01   -7.39826e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    1.30598e+01   -4.02786e-01    0.00000e+00    0.00000e+00
+    0.00000e+00    1.30619e+01   -4.02976e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -340,11 +340,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    4.46246e+00    5.20984e+01    5.46989e+00    3.52739e+00   -5.78892e+01
+    4.46231e+00    5.20982e+01    5.46995e+00    3.52726e+00   -5.78893e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.84581e+01   -8.07893e+01    0.00000e+00   -8.07893e+01   -8.07893e+01
+   -8.84582e+01   -8.07897e+01    0.00000e+00   -8.07897e+01   -8.07897e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    4.75260e+01   -1.00682e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    4.75181e+01   -1.00669e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -353,11 +353,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    5.10011e+00    1.34725e+01    7.14183e+00    1.43893e+00   -4.36837e+01
+    5.10101e+00    1.34703e+01    7.14172e+00    1.43890e+00   -4.36837e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.44135e+01   -1.00944e+02    0.00000e+00   -1.00944e+02   -1.00944e+02
+   -8.44135e+01   -1.00945e+02    0.00000e+00   -1.00945e+02   -1.00945e+02
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    1.50787e+01   -1.69606e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    1.50851e+01   -1.69603e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -366,11 +366,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    6.50338e+00    2.33832e+01    8.44204e+00    1.30978e+00   -2.55803e+01
+    6.50329e+00    2.33848e+01    8.44192e+00    1.30934e+00   -2.55800e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -7.90214e+01   -6.49632e+01    0.00000e+00   -6.49632e+01   -6.49632e+01
+   -7.90212e+01   -6.49619e+01    0.00000e+00   -6.49619e+01   -6.49619e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -7.42850e+01   -1.87929e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -7.42654e+01   -1.87885e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -379,11 +379,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.54432e+00    1.16018e+01    7.69181e+00    4.00446e-01   -2.59217e+01
+    3.54542e+00    1.16005e+01    7.69177e+00    4.00491e-01   -2.59218e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -7.95998e+01   -8.22832e+01    0.00000e+00   -8.22832e+01   -8.22832e+01
+   -7.95998e+01   -8.22834e+01    0.00000e+00   -8.22834e+01   -8.22834e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -6.06168e-01   -9.84965e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -6.12765e-01   -9.85012e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -392,11 +392,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    2.32822e+00    2.73656e+01    7.85646e+00    1.78754e+00   -5.13680e+01
+    2.32795e+00    2.73644e+01    7.85643e+00    1.78762e+00   -5.13672e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.56970e+01   -9.77271e+01    0.00000e+00   -9.77271e+01   -9.77271e+01
+   -8.56969e+01   -9.77277e+01    0.00000e+00   -9.77277e+01   -9.77277e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    4.02404e+00   -7.57215e-01    0.00000e+00    0.00000e+00
+    0.00000e+00    4.02499e+00   -7.57496e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -405,11 +405,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    5.73624e+00    5.54299e+01    5.93767e+00    3.35032e+00   -5.88809e+01
+    5.73560e+00    5.54295e+01    5.93751e+00    3.34970e+00   -5.88800e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.73210e+01   -7.57477e+01    0.00000e+00   -7.57477e+01   -7.57477e+01
+   -8.73209e+01   -7.57486e+01    0.00000e+00   -7.57486e+01   -7.57486e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    4.21409e+01    4.63299e-01    0.00000e+00    0.00000e+00
+    0.00000e+00    4.21493e+01    4.63402e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -418,11 +418,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.01651e+00    3.83843e+01    5.51823e+00   -7.21569e-01   -5.23733e+01
+    3.01545e+00    3.83820e+01    5.51830e+00   -7.21633e-01   -5.23733e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.64342e+01   -9.26101e+01    0.00000e+00   -9.26101e+01   -9.26101e+01
+   -8.64342e+01   -9.26134e+01    0.00000e+00   -9.26134e+01   -9.26134e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    1.93564e+01    1.82388e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    1.93503e+01    1.82395e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -431,11 +431,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    6.33705e+00    2.88661e+01    7.53157e+00    6.37719e-01   -4.78246e+01
+    6.33643e+00    2.88682e+01    7.53168e+00    6.37611e-01   -4.78254e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.42264e+01   -8.86786e+01    0.00000e+00   -8.86786e+01   -8.86786e+01
+   -8.42266e+01   -8.86780e+01    0.00000e+00   -8.86780e+01   -8.86780e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -1.40173e+02   -1.52247e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -1.40159e+02   -1.51981e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -444,11 +444,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    4.41999e+00    1.55650e+01    1.23297e+01    1.84425e+00   -2.84923e+01
+    4.41942e+00    1.55658e+01    1.23297e+01    1.84422e+00   -2.84923e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
    -8.06736e+01   -7.50069e+01    0.00000e+00   -7.50069e+01   -7.50069e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    1.00125e+01   -2.53014e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    1.00158e+01   -2.53011e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -457,11 +457,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    1.84323e+00    2.51316e+01    1.33387e+01    4.11615e-01   -4.16848e+01
+    1.84218e+00    2.51288e+01    1.33385e+01    4.11963e-01   -4.16843e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.48013e+01   -8.57610e+01    0.00000e+00   -8.57610e+01   -8.57610e+01
+   -8.48013e+01   -8.57642e+01    0.00000e+00   -8.57642e+01   -8.57642e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -3.50826e+01   -8.97482e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -3.50822e+01   -8.97865e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -470,11 +470,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    9.74114e+00    3.58260e+01    1.50143e+01    4.13639e+00   -5.31029e+01
+    9.73930e+00    3.58237e+01    1.50144e+01    4.13610e+00   -5.31032e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.69285e+01   -7.53136e+01    0.00000e+00   -7.53136e+01   -7.53136e+01
+   -8.69286e+01   -7.53183e+01    0.00000e+00   -7.53183e+01   -7.53183e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    1.26100e+02   -2.98552e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    1.26082e+02   -2.98517e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -483,11 +483,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.28493e+00    4.29376e+01    1.07195e+01    6.79923e+00   -6.13575e+01
+    3.28610e+00    4.29392e+01    1.07197e+01    6.79927e+00   -6.13572e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.80296e+01   -8.56459e+01    0.00000e+00   -8.56459e+01   -8.56459e+01
+   -8.80296e+01   -8.56424e+01    0.00000e+00   -8.56424e+01   -8.56424e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -3.36452e+01   -1.82922e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -3.36568e+01   -1.82947e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -496,11 +496,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    4.08073e+00    2.91650e+01    6.13744e+00   -7.83080e-01   -5.03786e+01
+    4.08245e+00    2.91646e+01    6.13769e+00   -7.82972e-01   -5.03788e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.56727e+01   -9.74512e+01    0.00000e+00   -9.74512e+01   -9.74512e+01
+   -8.56727e+01   -9.74497e+01    0.00000e+00   -9.74497e+01   -9.74497e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -4.37762e+01    1.50659e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -4.38020e+01    1.50657e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -509,11 +509,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    8.10344e+00    3.38127e+01    9.69712e+00   -1.15436e+00   -4.26082e+01
+    8.10395e+00    3.38126e+01    9.69709e+00   -1.15409e+00   -4.26078e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.31788e+01   -7.53280e+01    0.00000e+00   -7.53280e+01   -7.53280e+01
+   -8.31787e+01   -7.53270e+01    0.00000e+00   -7.53270e+01   -7.53270e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -9.72802e+01    9.40487e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -9.72913e+01    9.40197e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -522,11 +522,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    7.97938e-01    3.93740e+01    1.23037e+01   -1.04144e+00   -4.83177e+01
+    7.97908e-01    3.93708e+01    1.23038e+01   -1.04176e+00   -4.83180e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.50077e+01   -8.18912e+01    0.00000e+00   -8.18912e+01   -8.18912e+01
+   -8.50077e+01   -8.18950e+01    0.00000e+00   -8.18950e+01   -8.18950e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -7.58137e+00    1.43990e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -7.56443e+00    1.44027e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -535,11 +535,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.53672e+00    3.45996e+01    1.17281e+01    6.07364e+00   -6.09956e+01
+    3.53567e+00    3.46005e+01    1.17280e+01    6.07452e+00   -6.09963e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.71786e+01   -9.22361e+01    0.00000e+00   -9.22361e+01   -9.22361e+01
+   -8.71787e+01   -9.22362e+01    0.00000e+00   -9.22362e+01   -9.22362e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -4.37703e+01   -6.20590e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -4.37800e+01   -6.20948e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -548,11 +548,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    6.91297e+00    3.47102e+01    1.13751e+01    8.74372e+00   -6.06218e+01
+    6.91244e+00    3.47091e+01    1.13752e+01    8.74394e+00   -6.06215e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.73562e+01   -8.62360e+01    0.00000e+00   -8.62360e+01   -8.62360e+01
+   -8.73562e+01   -8.62370e+01    0.00000e+00   -8.62370e+01   -8.62370e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    9.04272e+01   -3.79257e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    9.04153e+01   -3.79296e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -561,11 +561,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.10163e+00    2.36138e+01    1.34314e+01    7.39742e+00   -4.44710e+01
+    3.10172e+00    2.36156e+01    1.34313e+01    7.39802e+00   -4.44707e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.47029e+01   -8.16295e+01    0.00000e+00   -8.16295e+01   -8.16295e+01
+   -8.47028e+01   -8.16269e+01    0.00000e+00   -8.16269e+01   -8.16269e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    6.08723e+00   -7.62633e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    6.11957e+00   -7.62696e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -574,11 +574,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    1.63634e+00    2.73387e+01    1.09254e+01    2.24217e+00   -3.77216e+01
+    1.63563e+00    2.73384e+01    1.09254e+01    2.24222e+00   -3.77218e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.27318e+01   -7.83107e+01    0.00000e+00   -7.83107e+01   -7.83107e+01
+   -8.27319e+01   -7.83120e+01    0.00000e+00   -7.83120e+01   -7.83120e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -3.77851e+01   -2.79513e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -3.77694e+01   -2.79518e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -587,11 +587,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    6.67439e+00    2.59374e+01    5.80131e+00   -1.90789e+00   -4.49095e+01
+    6.67133e+00    2.59374e+01    5.80119e+00   -1.90816e+00   -4.49082e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.56161e+01   -9.40204e+01    0.00000e+00   -9.40204e+01   -9.40204e+01
+   -8.56160e+01   -9.40224e+01    0.00000e+00   -9.40224e+01   -9.40224e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -8.76043e+01    1.77737e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -8.75907e+01    1.77752e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -600,11 +600,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.40265e+00    5.39702e+01    4.69165e+00    1.52833e+00   -5.52354e+01
+    3.40424e+00    5.39743e+01    4.69177e+00    1.52888e+00   -5.52371e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.87065e+01   -8.03490e+01    0.00000e+00   -8.03490e+01   -8.03490e+01
+   -8.87067e+01   -8.03446e+01    0.00000e+00   -8.03446e+01   -8.03446e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    1.19399e+01    1.48668e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    1.19386e+01    1.48692e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -613,11 +613,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    4.54934e+00    5.67706e+01    5.35981e+00    7.29076e+00   -6.46698e+01
+    4.54838e+00    5.67728e+01    5.35968e+00    7.29288e+00   -6.46718e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.91754e+01   -7.98747e+01    0.00000e+00   -7.98747e+01   -7.98747e+01
+   -8.91755e+01   -7.98736e+01    0.00000e+00   -7.98736e+01   -7.98736e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -1.06097e+01    8.70436e-02    0.00000e+00    0.00000e+00
+    0.00000e+00   -1.05860e+01    8.68636e-02    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -626,11 +626,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    4.54996e+00    2.50760e+01    4.05286e+00    3.01484e+00   -5.05124e+01
+    4.54946e+00    2.50755e+01    4.05269e+00    3.01525e+00   -5.05123e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.64548e+01   -1.00273e+02    0.00000e+00   -1.00273e+02   -1.00273e+02
+   -8.64546e+01   -1.00274e+02    0.00000e+00   -1.00274e+02   -1.00274e+02
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    8.90500e+01   -2.23750e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    8.90353e+01   -2.23799e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -639,11 +639,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    1.45298e+00    2.50687e+01    7.19956e+00   -9.67050e-01   -3.19112e+01
+    1.45192e+00    2.50689e+01    7.19893e+00   -9.67238e-01   -3.19112e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.20443e+01   -8.12012e+01    0.00000e+00   -8.12012e+01   -8.12012e+01
+   -8.20443e+01   -8.12030e+01    0.00000e+00   -8.12030e+01   -8.12030e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -8.36178e+00    2.75181e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -8.36399e+00    2.75367e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -652,11 +652,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    5.93091e+00    2.70143e+01    8.76571e+00   -1.78622e+00   -3.90518e+01
+    5.92944e+00    2.70138e+01    8.76560e+00   -1.78638e+00   -3.90521e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.31511e+01   -8.22783e+01    0.00000e+00   -8.22783e+01   -8.22783e+01
+   -8.31512e+01   -8.22809e+01    0.00000e+00   -8.22809e+01   -8.22809e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -3.80836e+01    1.27666e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -3.81063e+01    1.27685e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -665,11 +665,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.14183e+00    3.41857e+01    9.21131e+00    1.50832e+00   -5.55902e+01
+    3.14061e+00    3.41894e+01    9.21127e+00    1.51006e+00   -5.55937e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.64808e+01   -9.40239e+01    0.00000e+00   -9.40239e+01   -9.40239e+01
+   -8.64812e+01   -9.40235e+01    0.00000e+00   -9.40235e+01   -9.40235e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -3.93641e+01    8.42784e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -3.93499e+01    8.42599e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -678,11 +678,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    1.18018e+01    3.96285e+01    7.48970e+00    8.98906e+00   -6.13117e+01
+    1.18015e+01    3.96263e+01    7.48989e+00    8.99056e+00   -6.13138e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.69292e+01   -8.03318e+01    0.00000e+00   -8.03318e+01   -8.03318e+01
+   -8.69293e+01   -8.03348e+01    0.00000e+00   -8.03348e+01   -8.03348e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    6.90126e+01   -2.98212e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    6.89996e+01   -2.98188e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -691,11 +691,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    7.24680e+00    3.63922e+01    8.32271e+00    3.75181e+00   -5.36358e+01
+    7.24599e+00    3.63945e+01    8.32297e+00    3.75253e+00   -5.36379e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.47018e+01   -8.26241e+01    0.00000e+00   -8.26241e+01   -8.26241e+01
+   -8.47020e+01   -8.26239e+01    0.00000e+00   -8.26239e+01   -8.26239e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -5.60943e+01   -1.50610e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -5.60934e+01   -1.50596e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -704,11 +704,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    2.44125e+00    2.15241e+01    5.80365e+00    3.97395e-02   -3.74831e+01
+    2.44074e+00    2.15254e+01    5.80382e+00    4.02300e-02   -3.74834e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.19778e+01   -8.96522e+01    0.00000e+00   -8.96522e+01   -8.96522e+01
+   -8.19778e+01   -8.96510e+01    0.00000e+00   -8.96510e+01   -8.96510e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -5.73766e+01   -4.91942e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -5.73914e+01   -4.92427e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -717,11 +717,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    1.09469e+01    2.62318e+01    4.90705e+00   -1.93458e+00   -3.32633e+01
+    1.09455e+01    2.62304e+01    4.90677e+00   -1.93471e+00   -3.32650e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.15656e+01   -7.46778e+01    0.00000e+00   -7.46778e+01   -7.46778e+01
+   -8.15661e+01   -7.46831e+01    0.00000e+00   -7.46831e+01   -7.46831e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -9.99211e+01    1.31882e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -9.99197e+01    1.31895e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -730,11 +730,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    2.55214e+00    3.68224e+01    7.64948e+00    4.40598e+00   -4.99945e+01
+    2.55287e+00    3.68204e+01    7.64972e+00    4.40617e+00   -4.99944e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.53306e+01   -8.38951e+01    0.00000e+00   -8.38951e+01   -8.38951e+01
+   -8.53308e+01   -8.38960e+01    0.00000e+00   -8.38960e+01   -8.38960e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    1.78507e+01   -3.68418e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    1.78377e+01   -3.68444e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -743,11 +743,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    7.98352e+00    3.99942e+01    6.55323e+00    5.74896e+00   -6.29927e+01
+    7.98293e+00    3.99958e+01    6.55266e+00    5.75212e+00   -6.29963e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.73678e+01   -9.00806e+01    0.00000e+00   -9.00806e+01   -9.00806e+01
+   -8.73682e+01   -9.00810e+01    0.00000e+00   -9.00810e+01   -9.00810e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    4.37592e+01    1.45531e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    4.37631e+01    1.45544e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -756,11 +756,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    6.00950e+00    3.73560e+01    5.19520e+00    8.90057e+00   -5.84255e+01
+    6.00810e+00    3.73560e+01    5.19490e+00    8.90413e+00   -5.84293e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.71322e+01   -8.80965e+01    0.00000e+00   -8.80965e+01   -8.80965e+01
+   -8.71326e+01   -8.80988e+01    0.00000e+00   -8.80988e+01   -8.80988e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    3.03210e+01   -5.29584e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    3.03122e+01   -5.29714e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -769,11 +769,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    8.58169e+00    2.77450e+01    7.36289e+00    1.61903e+00   -4.32430e+01
+    8.58179e+00    2.77391e+01    7.36282e+00    1.61828e+00   -4.32397e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.49486e+01   -8.28830e+01    0.00000e+00   -8.28830e+01   -8.28830e+01
+   -8.49481e+01   -8.28858e+01    0.00000e+00   -8.28858e+01   -8.28858e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -4.91447e+01   -2.02897e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -4.91104e+01   -2.02848e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -782,11 +782,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    4.55627e+00    1.53682e+01    8.58329e+00   -2.35691e-01   -3.00224e+01
+    4.55565e+00    1.53632e+01    8.58373e+00   -2.35646e-01   -3.00227e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.19576e+01   -8.37081e+01    0.00000e+00   -8.37081e+01   -8.37081e+01
+   -8.19578e+01   -8.37135e+01    0.00000e+00   -8.37135e+01   -8.37135e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -6.13537e+00   -5.36259e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -6.13678e+00   -5.36307e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -795,11 +795,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    2.17554e+00    3.08885e+01    7.29569e+00    4.22953e+00   -4.05454e+01
+    2.17541e+00    3.08870e+01    7.29632e+00    4.23036e+00   -4.05472e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.43715e+01   -8.03277e+01    0.00000e+00   -8.03277e+01   -8.03277e+01
+   -8.43720e+01   -8.03301e+01    0.00000e+00   -8.03301e+01   -8.03301e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    5.22921e+01   -4.79618e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    5.22951e+01   -4.79693e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -808,11 +808,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.34133e+00    2.83207e+01    5.67090e+00    6.47259e-01   -4.60625e+01
+    3.34126e+00    2.83257e+01    5.67147e+00    6.48103e-01   -4.60709e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.63491e+01   -9.44314e+01    0.00000e+00   -9.44314e+01   -9.44314e+01
+   -8.63504e+01   -9.44348e+01    0.00000e+00   -9.44348e+01   -9.44348e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -1.34378e+01   -8.93734e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -1.34220e+01   -8.93685e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -821,11 +821,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    6.77982e+00    5.60338e+01    4.89744e+00    5.50663e+00   -5.90590e+01
+    6.77946e+00    5.60347e+01    4.89790e+00    5.50625e+00   -5.90574e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.80833e+01   -7.39246e+01    0.00000e+00   -7.39246e+01   -7.39246e+01
+   -8.80832e+01   -7.39223e+01    0.00000e+00   -7.39223e+01   -7.39223e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -1.81609e+01   -2.10802e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -1.81608e+01   -2.10857e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -834,11 +834,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.17877e+00    3.18630e+01    5.84158e+00    7.60335e-01   -5.23753e+01
+    3.18043e+00    3.18492e+01    5.84116e+00    7.58721e-01   -5.23700e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.61226e+01   -9.68542e+01    0.00000e+00   -9.68542e+01   -9.68542e+01
+   -8.61221e+01   -9.68626e+01    0.00000e+00   -9.68626e+01   -9.68626e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    1.58106e+01    5.72708e-01    0.00000e+00    0.00000e+00
+    0.00000e+00    1.57667e+01    5.72460e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -847,11 +847,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.07813e+00    3.58468e+01    5.48479e+00    2.57327e+00   -5.17941e+01
+    3.08204e+00    3.58440e+01    5.48405e+00    2.57094e+00   -5.17866e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.56848e+01   -9.04960e+01    0.00000e+00   -9.04960e+01   -9.04960e+01
+   -8.56838e+01   -9.04894e+01    0.00000e+00   -9.04894e+01   -9.04894e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    4.29446e+01   -1.40203e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    4.29318e+01   -1.40192e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -860,11 +860,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    2.54968e+00    1.93906e+01    5.67633e+00   -1.05209e+00   -2.98541e+01
+    2.54937e+00    1.93927e+01    5.67576e+00   -1.05171e+00   -2.98542e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.22734e+01   -8.55630e+01    0.00000e+00   -8.55630e+01   -8.55630e+01
+   -8.22735e+01   -8.55615e+01    0.00000e+00   -8.55615e+01   -8.55615e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -2.01973e+01    3.58667e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -2.01940e+01    3.58289e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -873,11 +873,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    5.97749e+00    3.04305e+01    7.67331e+00   -2.16742e+00   -3.72163e+01
+    5.97375e+00    3.04272e+01    7.67233e+00   -2.16737e+00   -3.72191e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.39302e+01   -7.92326e+01    0.00000e+00   -7.92326e+01   -7.92326e+01
+   -8.39310e+01   -7.92441e+01    0.00000e+00   -7.92441e+01   -7.92441e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -8.92244e+01    1.49025e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -8.92144e+01    1.49023e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -886,11 +886,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.91409e+00    3.17811e+01    6.31986e+00    5.21380e+00   -5.82492e+01
+    3.91838e+00    3.17807e+01    6.31913e+00    5.21665e+00   -5.82547e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.56898e+01   -9.67101e+01    0.00000e+00   -9.67101e+01   -9.67101e+01
+   -8.56908e+01   -9.67106e+01    0.00000e+00   -9.67106e+01   -9.67106e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    8.52097e-01   -6.82458e-01    0.00000e+00    0.00000e+00
+    0.00000e+00    8.65669e-01   -6.81990e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -899,11 +899,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.43548e+00    4.81035e+01    6.74747e+00    1.60608e+01   -6.57916e+01
+    3.43569e+00    4.81062e+01    6.74717e+00    1.60553e+01   -6.57875e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.68199e+01   -7.82643e+01    0.00000e+00   -7.82643e+01   -7.82643e+01
+   -8.68196e+01   -7.82627e+01    0.00000e+00   -7.82627e+01   -7.82627e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    6.16987e+01   -4.14390e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    6.16603e+01   -4.14391e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -912,11 +912,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    3.68866e+00    3.36644e+01    7.30606e+00    8.27479e+00   -6.18717e+01
+    3.69092e+00    3.36579e+01    7.30547e+00    8.27279e+00   -6.18702e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.72377e+01   -9.61755e+01    0.00000e+00   -9.61755e+01   -9.61755e+01
+   -8.72378e+01   -9.61810e+01    0.00000e+00   -9.61810e+01   -9.61810e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00    6.14025e+01   -2.09922e+00    0.00000e+00    0.00000e+00
+    0.00000e+00    6.13918e+01   -2.09883e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -925,11 +925,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    9.15844e+00    2.59745e+01    9.48918e+00   -1.27206e+00   -3.71070e+01
+    9.15642e+00    2.59778e+01    9.48974e+00   -1.27168e+00   -3.71057e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.37389e+01   -7.74958e+01    0.00000e+00   -7.74958e+01   -7.74958e+01
+   -8.37388e+01   -7.74922e+01    0.00000e+00   -7.74922e+01   -7.74922e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -1.00845e+02    6.49998e-01    0.00000e+00    0.00000e+00
+    0.00000e+00   -1.00837e+02    6.49588e-01    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -938,11 +938,11 @@ Grid: 3 x 3 x 3 cells
 
    Energies (kJ/mol)
            Bond          Angle    Proper Dih.        LJ (SR)   Coulomb (SR)
-    6.80839e+00    2.00263e+01    9.46954e+00   -1.76366e+00   -3.37861e+01
+    6.80802e+00    2.00297e+01    9.46920e+00   -1.76334e+00   -3.37906e+01
    Coul. recip.      Potential    Kinetic En.   Total Energy  Conserved En.
-   -8.25772e+01   -8.18228e+01    0.00000e+00   -8.18228e+01   -8.18228e+01
+   -8.25781e+01   -8.18251e+01    0.00000e+00   -8.18251e+01   -8.18251e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.
-    0.00000e+00   -8.17305e+01    1.10349e+00    0.00000e+00    0.00000e+00
+    0.00000e+00   -8.17229e+01    1.10321e+00    0.00000e+00    0.00000e+00
    Constr. rmsd
     0.00000e+00
 
@@ -971,10 +971,9 @@ Grid: 3 x 3 x 3 cells
  Angles                                   0.001836           0.308     0.1
  Propers                                  0.002703           0.619     0.3
  Virial                                   0.003315           0.060     0.0
- Stop-CM                                  0.001040           0.010     0.0
  Calc-Ekin                                0.001040           0.028     0.0
 -----------------------------------------------------------------------------
- Total                                                     206.715   100.0
+ Total                                                     206.705   100.0
 -----------------------------------------------------------------------------
 
 
@@ -982,21 +981,21 @@ Grid: 3 x 3 x 3 cells
 
  Computing:         Nodes     Number     G-Cycles    Seconds     %
 -----------------------------------------------------------------------
- Neighbor search        1         51        0.002        0.0     2.9
- Force                  1         51        0.006        0.0     9.9
- PME mesh               1         51        0.043        0.0    74.8
- Rest                   1                   0.007        0.0    12.4
+ Neighbor search        1         51        0.005        0.0     2.8
+ Force                  1         51        0.012        0.0     6.8
+ PME mesh               1         51        0.143        0.0    84.1
+ Rest                   1                   0.011        0.0     6.2
 -----------------------------------------------------------------------
- Total                  1                   0.057        0.0   100.0
+ Total                  1                   0.170        0.1   100.0
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
- PME spread/gather      1        102        0.003        0.0     5.6
- PME 3D-FFT             1        102        0.017        0.0    30.1
- PME solve              1         51        0.022        0.0    38.9
+ PME spread/gather      1        102        0.038        0.0    22.2
+ PME 3D-FFT             1        102        0.024        0.0    14.2
+ PME solve              1         51        0.081        0.0    47.6
 -----------------------------------------------------------------------
 
                NODE (s)   Real (s)      (%)
-       Time:      0.021      0.021     98.9
+       Time:      0.052      0.052     99.9
                (Mnbf/s)   (GFlops)   (ns/day)  (hour/ns)
-Performance:      0.012      9.918   4153.568      0.006
-Finished mdrun on node 0 Wed Apr 26 10:01:49 2017
+Performance:      0.005      4.008   1678.711      0.014
+Finished mdrun on node 0 Mon May  1 14:46:58 2017

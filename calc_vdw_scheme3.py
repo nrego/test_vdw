@@ -185,7 +185,7 @@ for i, payload_i in enumerate(atmtypes):
 fudge_vdw = 0.5
 
 n_frames = univ.trajectory.n_frames
-n_frames = 1
+#n_frames = 1
 my_diffs = np.zeros((n_frames, len(for_lmbdas)+1))
 
 for window_idx, lmbda_for in enumerate(for_lmbdas):

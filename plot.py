@@ -12,6 +12,7 @@ for i, lmbda in enumerate(for_lmbdas):
     plt.xlabel('time (ps)')
     plt.ylabel(r'$\Delta U$ (kJ/mol)')
     plt.title(r'SC LJ $(\lambda_1={})$'.format(lmbda))
+    #plt.ylim(-10,2)
     #plt.show()
     plt.savefig(fname.format(int(lmbda*10), '.png'), bbox_inches='tight')
 
@@ -29,3 +30,4 @@ for i, lmbda in enumerate(for_lmbdas):
     plt.ylabel(r'$\Delta U$ (kJ/mol)')
     plt.title(r'SC LJ $(\lambda_1={})$'.format(lmbda))
     plt.savefig(fname.format(int(lmbda*10), '_abs_diff.png'), bbox_inches='tight')
+    #plt.show()

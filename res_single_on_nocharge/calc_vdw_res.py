@@ -297,3 +297,7 @@ for window_idx, lmbda_for in enumerate(for_lmbdas):
         my_diffs[window_idx, i_frame, 1] = u_for - u_lmbda
         print("frame {}".format(i_frame))
         print("delta u {}".format(u_for - u_lmbda))
+
+gmx = np.loadtxt('sc_no_sigma.xvg', comments=['@','#'])
+plt.plot(my_diffs[1,:,0], my_diffs[1,:,1], '-o', label='me')
+plt.plot(gmx[:,0], gmx[:,-6], '-o', label='Gromacs')

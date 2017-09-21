@@ -8,3 +8,6 @@ confout.gro
 *.xtc
 *.npz
 mdout.mdp
+.DS_Store
+*.dat
+

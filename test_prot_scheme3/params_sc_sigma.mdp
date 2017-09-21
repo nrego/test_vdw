@@ -76,7 +76,7 @@ pull_nstfout    = 0
 pull_nstxout    = 0
 
 free_energy     = yes
-init_lambda     = 0.9
+init_lambda     = 0.0
 foreign_lambda  = 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
 ; Soft-core params (used for intermediate states, i.e. lambda!=0 or 1)
 ;   *only* for use when transforming atom types from/to dummy types

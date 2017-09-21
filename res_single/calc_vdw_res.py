@@ -10,7 +10,7 @@ try:
     u_for_prev = u_for
 except:
     pass
-univ = MDAnalysis.Universe('sc_no_sigma.tpr', 'traj.xtc')
+univ = MDAnalysis.Universe('sc_sigma.tpr', 'traj.xtc')
 from mdtools import dr
 
 alc_indices = np.arange(7,18)
@@ -56,16 +56,16 @@ pairs = {
 #  NOTE: This is topology specific!!!
 alc_types = {
     7: ('DUM_HC', 'HC'),
-    8: ('DUM_CT', 'DUM_CT'),
-    9: ('DUM_HC', 'DUM_HC'),
-    10: ('DUM_CT', 'DUM_CT'),
-    11: ('DUM_HC', 'DUM_HC'),
-    12: ('DUM_HC', 'DUM_HC'),
-    13: ('DUM_HC', 'DUM_HC'),
-    14: ('DUM_CT', 'DUM_CT'),
-    15: ('DUM_HC', 'DUM_HC'),
-    16: ('DUM_HC', 'DUM_HC'),
-    17: ('DUM_HC', 'DUM_HC')
+    8: ('CT', 'DUM_CT'),
+    9: ('HC', 'DUM_HC'),
+    10: ('CT', 'DUM_CT'),
+    11: ('HC', 'DUM_HC'),
+    12: ('HC', 'DUM_HC'),
+    13: ('HC', 'DUM_HC'),
+    14: ('CT', 'DUM_CT'),
+    15: ('HC', 'DUM_HC'),
+    16: ('HC', 'DUM_HC'),
+    17: ('HC', 'DUM_HC')
 }
 
 type_lookup = {

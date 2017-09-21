@@ -13,7 +13,7 @@ except:
 univ = MDAnalysis.Universe('sc_sigma.tpr', 'traj.xtc')
 from mdtools import dr
 
-alc_indices = np.arange(877, 888)
+alc_indices = np.arange(878, 888)
 #alc_indices = [877]
 atm_indices = np.arange(univ.atoms.n_atoms)
 
@@ -57,7 +57,7 @@ pairs = {
 #    valued by tuple (Astate_idx, Bstate_idx)
 #  NOTE: This is topology specific!!!
 alc_types = {
-    877: ('HC', 'HC'),
+    #877: ('HC', 'HC'),
     878: ('CT', 'DUM_CT'),
     879: ('HC', 'DUM_HC'),
     880: ('CT', 'DUM_CT'),
@@ -165,11 +165,11 @@ for i, payload_i in enumerate(atmtypes):
 fudge_vdw = 0.5
 
 
-lmbda = 0.9
-for_lmbdas = [0.1, 0.5, 0.9, 1.0]
+lmbda = 0.0
+for_lmbdas = [0.1]
 
 n_frames = univ.trajectory.n_frames
-#n_frames = 1
+n_frames = 1
 my_diffs = np.zeros((len(for_lmbdas), n_frames, 2))
 
 for window_idx, lmbda_for in enumerate(for_lmbdas):
